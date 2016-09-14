@@ -23,6 +23,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="../../css/normalize.css">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="magnify.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,9 +36,9 @@
     <div class="ichnos"><a href="../../index.html#contents"><img src="../../img/triangle.png" width="40%"></a></div>
     <div class="text">
       <span class="title">
-        A Raft Manifest
-        <br /><br />
-        Rem + Rom
+        <span class="bold">A Raft Manifest</span>
+        <br />
+        <span class="smaller">Rem + Rom</span>
       </span>
       
       <span class="block1">
@@ -45,21 +46,15 @@
       </span>
 
       <span class="block2">
-        <div class="magnify1">
-          <div class="large1"></div>
-          <img class="small1" src="06.jpg" width="100%"/>
-        </div>
+        <img src="06.jpg" width="100%" class="zoom" data-magnify-src="06.jpg" />
       </span>
 
       <span class="block3">
-        <div class="magnify2">
-          <div class="large2"></div>
-          <img class="small2" src="07-08.jpg" width="100%"/>
-        </div>
+        <img src="07-08.jpg" width="100%" class="zoom" data-magnify-src="07-08.jpg" />
       </span>
 
       <span class="author">
-        <strong>MEAGEN CRAWFORD</strong> lives in Nashville where she co-edits 'Pider (<a href="http://pidermag.com/">pidermag.com</a>) and paints interpretations of her feelings (<a href="http://b-l-u-h-z.tumblr.com/">bluhz.com</a>).
+        <span class="bold">REM + ROM</span> wride A Raft Manifest.
       </span>
     </div>
 
@@ -70,6 +65,8 @@
     <!-- JavaScript
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <script src='jquery.min.js'></script>
+    <script src='jquery.magnify.js'></script>
+    <script src='jquery.magnify-mobile.js'></script>
     <script src='scripts.js'></script>
 
   </body>
