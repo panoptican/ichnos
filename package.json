@@ -25,5 +25,8 @@
   "homepage": "https://gitlab.com/udle/ichnos#README",
   "devDependencies": {
     "browser-sync": "^2.15.0"
+  },
+  "dependencies": {
+    "jquery": "^3.1.0"
   }
 }
