@@ -115,8 +115,8 @@ $(document).ready(function(){
 				var bgp = rx + "px " + ry + "px";
 				
 				//Time to move the magnifying glass with the mouse
-				var px = mx - $(".large2").width()/2.5;
-				var py = my - $(".large2").height()/2.5;
+				var px = mx - $(".large2").width()/2;
+				var py = my - $(".large2").height()/2;
 				//Now the glass moves with the mouse
 				//The logic is to deduct half of the glass's width and height from the 
 				//mouse coordinates to place it with its center at the mouse coordinates

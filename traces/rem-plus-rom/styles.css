@@ -70,19 +70,17 @@ body {
   opacity: 0.9
 }
 .block2 {
-  margin-top: 100px;
-  margin-left: 350px;
-  padding: 20px;
-  width: 425px;
+  margin-top: 600px;
+  margin-left: 10vw;
+  width: 80vw;
   display: block;
   background-color: #fff;
   opacity: 0.9
 }
 .block3 {
-  margin-top: 100px;
-  margin-left: 200px;
-  padding: 20px;
-  width: 500px;
+  margin-top: 600px;
+  margin-left: 10vw;
+  width: 80vw;
   display: block;
   background-color: #fff;
   opacity: 0.9
@@ -106,16 +104,16 @@ body {
   color: #DBB700;
 }
 .magnify1 {
-  width: 70vw; 
+  width: 80vw; 
   position: relative;
 }
 .magnify2 {
-  width: 70vw; 
+  width: 80vw; 
   position: relative;
 }
 .large1 {
   width: 1200px; 
-  height: 400px;
+  height: 200px;
   position: absolute;
   box-shadow: 0 0 0 7px rgba(0, 0, 0, 1), 0 0 5px 5px rgba(0, 0, 0, 0.75), inset 0 0 30px 20px rgba(0, 0, 0, 0.75);
   background: url('06.jpg') no-repeat;
@@ -123,7 +121,7 @@ body {
 }
 .large2 {
   width: 1200px; 
-  height: 300px;
+  height: 250px;
   position: absolute;
   box-shadow: 0 0 0 7px rgba(0, 0, 0, 1), 0 0 5px 5px rgba(0, 0, 0, 0.75), inset 0 0 30px 20px rgba(0, 0, 0, 0.75);
   background: url('07-08.jpg') no-repeat;
