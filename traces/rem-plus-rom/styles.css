@@ -105,20 +105,33 @@ body {
 .author a {
   color: #DBB700;
 }
-.magnify {
+.magnify1 {
   width: 70vw; 
   position: relative;
 }
-
-.large {
+.magnify2 {
   width: 70vw; 
+  position: relative;
+}
+.large1 {
+  width: 1200px; 
   height: 400px;
   position: absolute;
-  box-shadow: 0 0 0 7px rgba(219, 183, 0, 0.5), 0 0 7px 7px rgba(0, 0, 0, 0.5), inset 0 0 40px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0 7px rgba(0, 0, 0, 1), 0 0 5px 5px rgba(0, 0, 0, 0.75), inset 0 0 30px 20px rgba(0, 0, 0, 0.75);
   background: url('06.jpg') no-repeat;
   display: none;
 }
-
-.small { 
+.large2 {
+  width: 1200px; 
+  height: 300px;
+  position: absolute;
+  box-shadow: 0 0 0 7px rgba(0, 0, 0, 1), 0 0 5px 5px rgba(0, 0, 0, 0.75), inset 0 0 30px 20px rgba(0, 0, 0, 0.75);
+  background: url('07-08.jpg') no-repeat;
+  display: none;
+}
+.small1 { 
+  display: block; 
+}
+.small2 { 
   display: block; 
 }
