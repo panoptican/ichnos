@@ -1,0 +1,29 @@
+{
+  "name": "ichnos",
+  "version": "1.0.0",
+  "description": "a journal by tooth, by claw, by will and fire",
+  "main": "index.html",
+  "scripts": {
+    "serve": "browser-sync start --server --files 'css/*.css, js/*.js, **/*.html'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/udle/ichnos.git"
+  },
+  "keywords": [
+    "literature",
+    "poetry",
+    "journal",
+    "noise",
+    "experimental"
+  ],
+  "author": "Jason Spidle",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://gitlab.com/udle/ichnos/issues"
+  },
+  "homepage": "https://gitlab.com/udle/ichnos#README",
+  "devDependencies": {
+    "browser-sync": "^2.15.0"
+  }
+}
