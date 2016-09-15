@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'Playfair Display Bold';
-  src: url('PlayfairDisplay-Bold.eot');
-  src: url('PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
-    url('PlayfairDisplay-Bold.woff') format('woff'),
-    url('PlayfairDisplay-Bold.ttf') format('truetype');
+  font-family: 'Space Mono Bold';
+  src: url('SpaceMono-Bold.eot');
+  src: url('SpaceMono-Bold.eot?#iefix') format('embedded-opentype'),
+    url('SpaceMono-Bold.woff') format('woff'),
+    url('SpaceMono-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Playfair Display';
-  src: url('PlayfairDisplay-Regular.eot');
-  src: url('PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
-    url('PlayfairDisplay-Regular.woff') format('woff'),
-    url('PlayfairDisplay-Regular.ttf') format('truetype');
+  font-family: 'Space Mono';
+  src: url('SpaceMono-Regular.eot');
+  src: url('SpaceMono-Regular.eot?#iefix') format('embedded-opentype'),
+    url('SpaceMono-Regular.woff') format('woff'),
+    url('SpaceMono-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -68,13 +68,13 @@ body {
   padding: 20px;
   width: 50vw;
   display: block;
-  font-family: "Playfair Display", serif;
+  font-family: "Space Mono", serif;
   font-size: 48px;
   font-weight: 400;
   line-height: 1.20;
   opacity: 1.00;
-  letter-spacing: -0.72px;
-  word-spacing: 0.00px;
+  letter-spacing: -0.2px;
+  word-spacing: -10.40px;
   text-transform: none;
 }
 .block1 {
@@ -84,9 +84,10 @@ body {
   padding: 120px;
   display: block;
   width: 50vw;
+  text-align: justify;
 }
 .block2 {
-  margin-top: 600px;
+  margin-top: 400px;
   margin-left: 10vw;
   width: 80vw;
   display: block;
@@ -94,7 +95,7 @@ body {
   opacity: 0.9
 }
 .block3 {
-  margin-top: 600px;
+  margin-top: 400px;
   margin-left: 10vw;
   width: 80vw;
   display: block;
@@ -103,18 +104,18 @@ body {
 }
 .author {
   float: right;
-  margin-top: 600px;
+  margin-top: 400px;
   margin-right: 10px;
   margin-bottom: 10px;
-  padding: 50px;
-  width: 300px;
+  padding: 30px;
+  width: 350px;
   display: block;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Playfair Display';
+  background-color: #fff;
+  color: #000;
+  font-family: 'Space Mono';
   font-weight: 400;
   line-height: 1.20;
-  opacity: 0.3;
+  opacity: 0.5;
   letter-spacing: 0.7px;
   word-spacing: 1px;
   text-transform: none;
@@ -125,7 +126,7 @@ body {
   color: #DBB700;
 }
 .bold {
-  font-family: "Playfair Display Bold", serif;
+  font-family: "Space Mono Bold", serif;
 }
 .smaller {
   font-size: 32px;
