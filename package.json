@@ -4,7 +4,7 @@
   "description": "a journal by tooth, by claw, by will and fire",
   "main": "index.html",
   "scripts": {
-    "serve": "browser-sync start --server --files 'css/*.css, js/*.js, **/*.html'"
+    "serve": "browser-sync start --server --files 'target'"
   },
   "repository": {
     "type": "git",
