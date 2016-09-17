@@ -1,0 +1,50 @@
+/* Noticia
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+    font-family: 'noticia_textbold';
+    src: url('../type/noticiatext-bold-webfont.eot');
+    src: url('../type/noticiatext-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/noticiatext-bold-webfont.woff2') format('woff2'),
+         url('../type/noticiatext-bold-webfont.woff') format('woff'),
+         url('../type/noticiatext-bold-webfont.ttf') format('truetype'),
+         url('../type/noticiatext-bold-webfont.svg#noticia_textbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Klinic Slab
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+    font-family: 'klinic_slabbold';
+    src: url('../type/klinicslabbold-webfont.eot');
+    src: url('../type/klinicslabbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/klinicslabbold-webfont.woff2') format('woff2'),
+         url('../type/klinicslabbold-webfont.woff') format('woff'),
+         url('../type/klinicslabbold-webfont.ttf') format('truetype'),
+         url('../type/klinicslabbold-webfont.svg#klinic_slabbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Work Sans
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@font-face {
+    font-family: 'work_sansextralight';
+    src: url('../type/worksans-extralight-webfont.eot');
+    src: url('../type/worksans-extralight-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/worksans-extralight-webfont.woff2') format('woff2'),
+         url('../type/worksans-extralight-webfont.woff') format('woff'),
+         url('../type/worksans-extralight-webfont.ttf') format('truetype'),
+         url('../type/worksans-extralight-webfont.svg#work_sansextralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'work_sansregular';
+    src: url('../type/worksans-regular-webfont.eot');
+    src: url('../type/worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../type/worksans-regular-webfont.woff2') format('woff2'),
+         url('../type/worksans-regular-webfont.woff') format('woff'),
+         url('../type/worksans-regular-webfont.ttf') format('truetype'),
+         url('../type/worksans-regular-webfont.svg#work_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

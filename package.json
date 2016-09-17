@@ -4,7 +4,14 @@
   "description": "a journal by tooth, by claw, by will and fire",
   "main": "index.html",
   "scripts": {
-    "serve": "browser-sync start --server --files 'target'"
+    "test": "npm run clean && npm run copy && npm run sass && npm run autoprefix && npm run imagemin && npm run serve",
+    "build": "",
+    "serve": "browser-sync start --server 'target' --files 'target'",
+    "clean": "rimraf target && mkdir target target/css target/img target/type target/js",
+    "copy": "cp src/type/* target/type && cp src/*.* target",
+    "sass": "node-sass --output-style nested -o target/css src/scss",
+    "autoprefix": "postcss -u autoprefixer -r target/css/main.css",
+    "imagemin": "imagemin src/img/**/* --out-dir=target/img"
   },
   "repository": {
     "type": "git",
@@ -24,7 +31,13 @@
   },
   "homepage": "https://gitlab.com/udle/ichnos#README",
   "devDependencies": {
-    "browser-sync": "^2.15.0"
+    "autoprefixer": "^6.4.1",
+    "browser-sync": "^2.13.0",
+    "imagemin-cli": "^3.0.0",
+    "node-sass": "^3.9.3",
+    "postcss-cli": "^2.6.0",
+    "rimraf": "^2.5.4",
+    "uglifyjs": "^2.4.10"
   },
   "dependencies": {
     "jquery": "^3.1.0",
