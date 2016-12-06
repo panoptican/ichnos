@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'Galaxie';
+    src: url('GalaxiePolaris-Book.eot');
+    src: url('GalaxiePolaris-Book.eot?#iefix') format('embedded-opentype'),
+        url('GalaxiePolaris-Book.woff') format('woff'),
+        url('GalaxiePolaris-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fenwick';
+    src: url('FenwickOutline-Regular.eot');
+    src: url('FenwickOutline-Regular.eot?#iefix') format('embedded-opentype'),
+        url('FenwickOutline-Regular.woff') format('woff'),
+        url('FenwickOutline-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+p {
+    font-family: Galaxie, '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+}
 canvas {
     display: block;
     position: fixed;
@@ -5,7 +27,9 @@ canvas {
     left: 0;
     z-index: -1;
 }
-
+.title {
+    font-family: Fenwick, '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+}
 body {
   padding: 0;
   margin: 0;
@@ -57,9 +81,9 @@ p {
 
 .block2 {
     height: 1900px;
-    width: 250px;
+    width: 780px;
     margin-top: 400px;
-    margin-left: 46vw;
+    margin-left: 26vw;
     padding: 10px;
     display: block;
     text-align: justify;
@@ -68,10 +92,9 @@ p {
 .block3 {
     font-size: 24px;
     margin-top: 100px;
-    height: 100px;
     width: 400px;
     margin-left: 65vw;
-    padding: 10px;
+    padding: 30px;
     display: block;
     text-align: justify;
     background: #00b8b8;
@@ -80,7 +103,6 @@ p {
 .block4 {
     margin-top: 300px;
     margin-bottom: 100px;
-    height: 120px;
     width: 400px;
     margin-left: 15vw;
     padding: 10px;
@@ -119,6 +141,7 @@ p {
 }
 
 .piece {
+  font-family: Fenwick, '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
   position: absolute;
   left: 0;
   top: 0;
@@ -130,7 +153,6 @@ p {
           transform: translate3d(0, 0, 0);
   color: white;
   text-transform: uppercase;
-  font-family: serif;
   letter-spacing: .4em;
   font-size: 24px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
