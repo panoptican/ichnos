@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'L-7 Stencil';
+  src: url('L-7Stencil.eot');
+  src: url('L-7Stencil.eot?#iefix') format('embedded-opentype'),
+    url('L-7Stencil.woff') format('woff'),
+    url('L-7Stencil.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Yrsa';
+  src: url('Yrsa-Regular.eot');
+  src: url('Yrsa-Regular.eot?#iefix') format('embedded-opentype'),
+    url('Yrsa-Regular.woff') format('woff'),
+    url('Yrsa-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #e0e5db;
+}
+p {
+    font-family: Yrsa, '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+    padding: 25px;
+    line-height: 36px;
+    font-size: 20px;
+    color: #e0e5db;
+    text-align: justify;
+}
+svg {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    font-family: "L-7 Stencil", '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+    font-size: 172px;
+    text-align: center;
+    letter-spacing: .5em;
+    color: #e0e5db;
+    text-shadow: rgba(51,51,51,0.3) -1px 0, rgba(51,51,51,0.3) 0 -1px, rgba(255,255,255,0.3) 1px 0, rgba(255,255,255,0.3) 0 1px, rgba(51,51,51,0.3) -1px -1px, rgba(255,255,255,0.3) 1px 1px;
+}
+h2 {
+    font-family: "Yrsa", '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: .1em;
+    color: #e0e5db;
+    text-shadow: rgba(51,51,51,0.3) -1px 0, rgba(51,51,51,0.3) 0 -1px, rgba(255,255,255,0.3) 1px 0, rgba(255,255,255,0.3) 0 1px, rgba(51,51,51,0.3) -1px -1px, rgba(255,255,255,0.3) 1px 1px;
+}
+h3 {
+    font-family: "Yrsa", '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+    margin-top: 180px;
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: .1em;
+    color: #e0e5db;
+    text-shadow: rgba(51,51,51,0.3) -1px 0, rgba(51,51,51,0.3) 0 -1px, rgba(255,255,255,0.3) 1px 0, rgba(255,255,255,0.3) 0 1px, rgba(51,51,51,0.3) -1px -1px, rgba(255,255,255,0.3) 1px 1px;
+}
+.title {
+    font-family: "L-7 Stencil", '-apple-system, BlinkMacSystemFont, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif';
+    font-size: 36px;
+    margin-top: 36px;
+    text-align: center;
+    color: #202020;
+    letter-spacing: .1em;
+    text-shadow: -1px -1px 1px #111, 2px 2px 1px #363636;
+}
+.ichnos {
+  position: fixed;
+  z-index: 1;
+  bottom: 10px;
+  left: 10px;
+}
+.block {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 40px 50px 15px rgba(51, 51, 51, 0.7);
+    background: #333;
+    position: relative;
+    overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    opacity: .97;
+    padding: 50px;
+}
+.author {
+    margin-top: 300px;
+    margin-bottom: 100px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background: rgba(255, 255, 0, 0.5);
+}
+.author p {
+  color: #202020;
+}
