@@ -1,128 +1,164 @@
+/**
+ * Kristin Peterson - Animated wave curves
+ */
+
 var Curves = (function() {
-    'use strict';
-    var raf_ID = 0;
+  'use strict';
 
-    function Shape(points, color) {
-        this.points = points;
-        this.color = color;
-    }
+  var raf_ID = 0;
 
-    Shape.prototype.render = function(ctx, width, height) {
-        var self = this;
-        ctx.save();
-        ctx.lineWidth = 2;
-        ctx.strokeStyle = '#fff';
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.16)';
-        this.points.forEach(function(point, i) {
-            ctx.beginPath();
-            ctx.font = '14px Arial';
-            ctx.arc(point.x, point.y, 2, 0, Math.PI * 2);
-            ctx.closePath();
-            ctx.fill();
-        });
-        ctx.fillStyle = this.color;
-        ctx.beginPath();
-        ctx.moveTo(this.points[0].x, this.points[0].y);
-        this.points.forEach(function(point, i) {
-            point.y = point.oldY + Math.sin(point.angle) * 35;
-            point.angle += point.speed;
-            var nextPoint = self.points[i + 1];
-            if (nextPoint) {
-                var ctrlPoint = {
-                    x: (point.x + nextPoint.x) / 2,
-                    y: (point.y + nextPoint.y) / 2
-                };
-                ctx.quadraticCurveTo(point.x, point.y, ctrlPoint.x, ctrlPoint.y);
-            }
-        });
-        ctx.lineTo(width, height);
-        ctx.lineTo(0, height);
-        ctx.fill();
+  /**
+   * Shape class representing a wave curve
+   */
+  function Shape(points, color) {
+    this.points = points;
+    this.color = color;
+  }
 
-        ctx.restore();
-    };
+  Shape.prototype.render = function(ctx, width, height) {
+    var self = this;
 
-    var canvas = document.createElement('canvas');
-    var ctx = canvas.getContext('2d');
+    ctx.save();
+    ctx.lineWidth = 2;
+    ctx.strokeStyle = '#fff';
+    ctx.fillStyle = 'rgba(255, 255, 255, 0.16)';
 
-    var width = window.innerWidth;
-    var height = window.innerHeight;
+    // Draw point indicators
+    this.points.forEach(function(point) {
+      ctx.beginPath();
+      ctx.font = '14px Arial';
+      ctx.arc(point.x, point.y, 2, 0, Math.PI * 2);
+      ctx.closePath();
+      ctx.fill();
+    });
 
-    var colors = [
-        '#de3d83', '#e4bd0b', '#00b8b8', '#de3d83', '#e4bd0b', '#00b8b8'
-    ];
-    var position = { x: 0, y: height / 2 };
-    var shapes = generateShapes(6, height / 2, width / 20);
+    // Draw the wave curve
+    ctx.fillStyle = this.color;
+    ctx.beginPath();
+    ctx.moveTo(this.points[0].x, this.points[0].y);
 
-    function generateShapes(num, yCenter, spacing) {
-        var shapes = [];
-        for (var i = 0; i < num; i += 1) {
-            var points = [];
-            var offset = 0;
-            for (var x = 0; x <= width + width / 4; x += spacing) {
-                var angle = Math.random() * 360;
-                if (i === 0) offset = 20 + Math.random() * 40 - 50;
-                if (i === 1) offset = 80 + Math.random() * 60 - 50;
-                if (i === 2) offset = 110 + Math.random() * 80 - 50;
-                if (i === 3) offset = 150 + Math.random() * 100 - 50;
-                if (i === 4) offset = 200 + Math.random() * 130 - 50;
-                if (i === 5) offset = 250 + Math.random() * 170 - 50;
-                offset -= x / 20;
-                var point = {
-                    x: x,
-                    y: yCenter + offset + 10 + Math.random() * 20,
-                    oldY: yCenter + offset,
-                    angle: angle,
-                    speed: 0.025
-                };
-                points.push(point);
-            }
-            var shape = new Shape(points, colors[i]);
-            shapes.push(shape);
-        }
-        return shapes;
-    }
+    this.points.forEach(function(point, i) {
+      point.y = point.oldY + Math.sin(point.angle) * 35;
+      point.angle += point.speed;
 
-    function init(parent) {
-
-        canvas.width = width;
-        canvas.height = height;
-        parent.appendChild(canvas);
-        ctx.fillStyle = '#e0e5db';
-        startRender();
-        window.onresize = function() {
-            resize();
+      var nextPoint = self.points[i + 1];
+      if (nextPoint) {
+        var ctrlPoint = {
+          x: (point.x + nextPoint.x) / 2,
+          y: (point.y + nextPoint.y) / 2
         };
-    }
-    function render() {
-        raf_ID = window.requestAnimationFrame(render);
-        ctx.fillRect(0, 0, width, height);
-        shapes.forEach(function(shape) {
-            shape.render(ctx, width, height);
-        });
-    }
-    function startRender() {
-        render();
+        ctx.quadraticCurveTo(point.x, point.y, ctrlPoint.x, ctrlPoint.y);
+      }
+    });
+
+    ctx.lineTo(width, height);
+    ctx.lineTo(0, height);
+    ctx.fill();
+
+    ctx.restore();
+  };
+
+  // Canvas setup
+  var canvas = document.createElement('canvas');
+  var ctx = canvas.getContext('2d');
+  var width = window.innerWidth;
+  var height = window.innerHeight;
+
+  // Wave colors
+  var colors = [
+    '#de3d83', '#e4bd0b', '#00b8b8', '#de3d83', '#e4bd0b', '#00b8b8'
+  ];
+
+  var shapes = generateShapes(6, height / 2, width / 20);
+
+  /**
+   * Generate wave shapes with randomized points
+   */
+  function generateShapes(num, yCenter, spacing) {
+    var shapes = [];
+
+    for (var i = 0; i < num; i++) {
+      var points = [];
+      var offset = 0;
+
+      for (var x = 0; x <= width + width / 4; x += spacing) {
+        var angle = Math.random() * 360;
+
+        // Layer-specific offset calculations
+        if (i === 0) offset = 20 + Math.random() * 40 - 50;
+        if (i === 1) offset = 80 + Math.random() * 60 - 50;
+        if (i === 2) offset = 110 + Math.random() * 80 - 50;
+        if (i === 3) offset = 150 + Math.random() * 100 - 50;
+        if (i === 4) offset = 200 + Math.random() * 130 - 50;
+        if (i === 5) offset = 250 + Math.random() * 170 - 50;
+
+        offset -= x / 20;
+
+        var point = {
+          x: x,
+          y: yCenter + offset + 10 + Math.random() * 20,
+          oldY: yCenter + offset,
+          angle: angle,
+          speed: 0.025
+        };
+        points.push(point);
+      }
+
+      var shape = new Shape(points, colors[i]);
+      shapes.push(shape);
     }
 
-    function stopRender() {
-        window.cancelAnimationFrame(raf_ID);
-    }
+    return shapes;
+  }
 
-    function resize() {
-        canvas.width = width = window.innerWidth;
-        canvas.height = height = window.innerHeight;
-    }
+  /**
+   * Initialize the canvas and start rendering
+   */
+  function init(parent) {
+    canvas.width = width;
+    canvas.height = height;
+    parent.appendChild(canvas);
+    ctx.fillStyle = '#e0e5db';
+    startRender();
 
-    return {
-        init: init,
-        startRender: startRender,
-        stopRender: stopRender
+    window.onresize = function() {
+      resize();
     };
+  }
 
+  /**
+   * Main render loop
+   */
+  function render() {
+    raf_ID = window.requestAnimationFrame(render);
+    ctx.fillRect(0, 0, width, height);
+
+    shapes.forEach(function(shape) {
+      shape.render(ctx, width, height);
+    });
+  }
+
+  function startRender() {
+    render();
+  }
+
+  function stopRender() {
+    window.cancelAnimationFrame(raf_ID);
+  }
+
+  function resize() {
+    canvas.width = width = window.innerWidth;
+    canvas.height = height = window.innerHeight;
+  }
+
+  return {
+    init: init,
+    startRender: startRender,
+    stopRender: stopRender
+  };
 })();
 
 window.onload = function() {
   Curves.init(document.body);
   Curves.startRender();
-}
+};
