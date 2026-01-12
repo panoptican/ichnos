@@ -2,23 +2,23 @@
  * Dennis James Sweeney - Circle packing visualization using D3
  */
 
-var maxRadius = 32;
-var padding = -32;
-var margin = {
+const maxRadius = 32;
+const padding = -32;
+const margin = {
   top: -maxRadius,
   right: -maxRadius,
   bottom: -maxRadius,
   left: -maxRadius
 };
-var width = 2880 - margin.left - margin.right;
-var height = 1800 - margin.top - margin.bottom;
+const width = 2880 - margin.left - margin.right;
+const height = 1800 - margin.top - margin.bottom;
 
-var k = 1;  // initial number of candidates to consider per circle
-var m = 1;  // initial number of circles to add per frame
-var n = 5000;  // remaining number of circles to add
-var newCircle = bestCircleGenerator(maxRadius, padding);
+let k = 1;  // initial number of candidates to consider per circle
+let m = 1;  // initial number of circles to add per frame
+let n = 5000;  // remaining number of circles to add
+const newCircle = bestCircleGenerator(maxRadius, padding);
 
-var svg = d3.select("body").append("svg")
+const svg = d3.select("body").append("svg")
   .attr("width", width)
   .attr("height", height)
   .attr("class", "svgBG")
