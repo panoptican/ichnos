@@ -90,10 +90,10 @@ body {
   background-color: #fff;
   border: 10px double #000;
 }
-.section1{
+/* Shared section styles */
+.section1, .section2, .section3, .section4 {
   z-index: 2;
   position: absolute;
-  top: 150vh;
   margin-left: 20vw;
   width: 60vw;
   padding: 50px;
@@ -103,45 +103,12 @@ body {
   text-align: justify;
   line-height: 2.5rem;
 }
-.section2{
-  z-index: 2;
-  position: absolute;
-  top: 400vh;
-  margin-left: 20vw;
-  width: 60vw;
-  padding: 50px;
-  display: block;
-  background-color: #fff;
-  font-size: 24px;
-  text-align: justify;
-  line-height: 2.5rem;
-}
-.section3{
-  z-index: 2;
-  position: absolute;
-  top: 650vh;
-  margin-left: 20vw;
-  width: 60vw;
-  padding: 50px;
-  display: block;
-  background-color: #fff;
-  font-size: 24px;
-  text-align: justify;
-  line-height: 2.5rem;
-}
-.section4{
-  z-index: 2;
-  position: absolute;
-  top: 900vh;
-  margin-left: 20vw;
-  width: 60vw;
-  padding: 50px;
-  display: block;
-  background-color: #fff;
-  font-size: 24px;
-  text-align: justify;
-  line-height: 2.5rem;
-}
+
+/* Section-specific positioning */
+.section1 { top: 150vh; }
+.section2 { top: 400vh; }
+.section3 { top: 650vh; }
+.section4 { top: 900vh; }
 .author{
   font-family: averia_serifregular;
   z-index: 2;
