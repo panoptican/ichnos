@@ -144,3 +144,43 @@ body {
 .author a {
   color: #DBB700;
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .title,
+  .block1, .block2, .block3, .block4, .block5,
+  .author {
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .block4 {
+    max-width: 400px;
+  }
+
+  .subblock5 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .title,
+  .block1, .block2, .block3, .block4, .block5,
+  .author {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 1.5rem;
+  }
+}

@@ -139,3 +139,37 @@ canvas {
 .smaller {
   font-size: 32px;
 }
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .title {
+    width: 90%;
+    font-size: 32px;
+    padding: 15px;
+  }
+
+  .smaller {
+    font-size: 24px;
+  }
+
+  .block1 {
+    width: 90%;
+  }
+
+  .block2, .block3 {
+    width: 95%;
+    margin-left: 2.5%;
+  }
+
+  .author {
+    width: 90%;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}

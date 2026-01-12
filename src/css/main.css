@@ -142,3 +142,103 @@
   color: #DBB700;
   text-decoration: none;
 }
+
+/* Focus styles for keyboard navigation */
+a:focus,
+.row-left a:focus,
+.row-right a:focus {
+  outline: 3px solid #DBB700;
+  outline-offset: 2px;
+}
+
+.row-left a:focus,
+.row-right a:focus {
+  opacity: 1;
+  transform: skew(0deg);
+}
+
+.nav a:focus {
+  color: #DBB700;
+}
+
+/* Responsive Design - Tablet */
+@media (max-width: 900px) {
+  .row-left a,
+  .row-right a {
+    width: 28vw;
+  }
+
+  .toc-title {
+    font-size: 1.1rem;
+  }
+
+  .toc-author {
+    font-size: 0.9rem;
+  }
+}
+
+/* Responsive Design - Mobile */
+@media (max-width: 600px) {
+  /* Cover adjustments */
+  .wordmark {
+    width: 90vw;
+    left: 5vw;
+    right: 5vw;
+    top: 30vh;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  /* Table of Contents - stack cards vertically */
+  .toc {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px;
+  }
+
+  .row {
+    width: 100%;
+    height: auto;
+    flex-flow: column nowrap;
+    margin-bottom: 10px;
+  }
+
+  .row-left a,
+  .row-right a {
+    width: 85vw;
+    height: auto;
+    min-height: 80px;
+    padding: 15px;
+    margin: 8px auto;
+    transform: skew(0deg);
+    opacity: 0.9;
+  }
+
+  .row-left a:hover,
+  .row-right a:hover {
+    transform: scale(1.02);
+  }
+
+  .toc-title {
+    font-size: 1rem;
+  }
+
+  .toc-author {
+    font-size: 0.85rem;
+  }
+
+  /* Navigation - scale font size */
+  .nav {
+    height: auto;
+    min-height: 60px;
+    padding: 15px;
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+    height: auto;
+    padding: 10px;
+  }
+}

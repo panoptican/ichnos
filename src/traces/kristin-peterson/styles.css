@@ -180,3 +180,55 @@ p {
             transform: rotate(360deg);
   }
 }
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .block1, .block2 {
+    width: 85%;
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .block3, .block4 {
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .block1, .block2, .block3, .block4 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 15px;
+  }
+
+  .block1 {
+    height: auto;
+    margin-top: 150px;
+  }
+
+  .block2 {
+    height: auto;
+    margin-top: 200px;
+  }
+
+  .wave {
+    width: 300px;
+    height: 300px;
+    margin-left: -150px;
+    margin-top: -150px;
+  }
+
+  .piece {
+    font-size: 18px;
+  }
+
+  p {
+    padding: 15px;
+    line-height: 28px;
+  }
+}
