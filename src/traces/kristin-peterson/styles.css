@@ -1,19 +1,15 @@
 @font-face {
     font-family: 'Galaxie';
-    src: url('GalaxiePolaris-Book.eot');
-    src: url('GalaxiePolaris-Book.eot?#iefix') format('embedded-opentype'),
-        url('GalaxiePolaris-Book.woff') format('woff'),
-        url('GalaxiePolaris-Book.ttf') format('truetype');
+    src: url('GalaxiePolaris-Book.woff') format('woff'),
+         url('GalaxiePolaris-Book.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Fenwick';
-    src: url('FenwickOutline-Regular.eot');
-    src: url('FenwickOutline-Regular.eot?#iefix') format('embedded-opentype'),
-        url('FenwickOutline-Regular.woff') format('woff'),
-        url('FenwickOutline-Regular.ttf') format('truetype');
+    src: url('FenwickOutline-Regular.woff') format('woff'),
+         url('FenwickOutline-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }

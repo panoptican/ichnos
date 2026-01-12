@@ -4,24 +4,18 @@
 
 @font-face {
   font-family: 'League Spartan';
-  src: url('leaguespartan-bold.eot');
-  src: url('leaguespartan-bold.eot?#iefix') format('embedded-opentype'),
-       url('leaguespartan-bold.woff2') format('woff2'),
+  src: url('leaguespartan-bold.woff2') format('woff2'),
        url('leaguespartan-bold.woff') format('woff'),
-       url('leaguespartan-bold.ttf') format('truetype'),
-       url('leaguespartan-bold.svg#league_spartanbold') format('svg');
+       url('leaguespartan-bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'work_sansregular';
-  src: url('worksans-regular-webfont.eot');
-  src: url('worksans-regular-webfont.eot?#iefix') format('embedded-opentype'),
-       url('worksans-regular-webfont.woff2') format('woff2'),
+  src: url('worksans-regular-webfont.woff2') format('woff2'),
        url('worksans-regular-webfont.woff') format('woff'),
-       url('worksans-regular-webfont.ttf') format('truetype'),
-       url('worksans-regular-webfont.svg#work_sansregular') format('svg');
+       url('worksans-regular-webfont.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }

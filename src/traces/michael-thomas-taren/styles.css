@@ -1,37 +1,26 @@
 @font-face {
     font-family: 'bebas_neuebold';
-    src: url('bebasneue_bold-webfont.eot');
-    src: url('bebasneue_bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('bebasneue_bold-webfont.woff2') format('woff2'),
+    src: url('bebasneue_bold-webfont.woff2') format('woff2'),
          url('bebasneue_bold-webfont.woff') format('woff'),
-         url('bebasneue_bold-webfont.ttf') format('truetype'),
-         url('bebasneue_bold-webfont.svg#bebas_neuebold') format('svg');
+         url('bebasneue_bold-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'bebas_neue_regularregular';
-    src: url('bebasneue_regular-webfont.eot');
-    src: url('bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('bebasneue_regular-webfont.woff2') format('woff2'),
+    src: url('bebasneue_regular-webfont.woff2') format('woff2'),
          url('bebasneue_regular-webfont.woff') format('woff'),
-         url('bebasneue_regular-webfont.ttf') format('truetype'),
-         url('bebasneue_regular-webfont.svg#bebas_neue_regularregular') format('svg');
+         url('bebasneue_regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 @font-face {
     font-family: 'bornregular';
-    src: url('born-webfont.eot');
-    src: url('born-webfont.eot?#iefix') format('embedded-opentype'),
-         url('born-webfont.woff2') format('woff2'),
+    src: url('born-webfont.woff2') format('woff2'),
          url('born-webfont.woff') format('woff'),
-         url('born-webfont.ttf') format('truetype'),
-         url('born-webfont.svg#bornregular') format('svg');
+         url('born-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-
 }
 canvas {
   position:fixed;

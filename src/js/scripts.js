@@ -8,6 +8,6 @@ $(document).ready(function() {
   });
 
   $('.submit-link').click(function() {
-    vex.dialog.alert('ICHNOS is published according to no guidelines, biases, proclivities or schedule by <a href="http://www.unwin-dunraven.com">Unwin-Dunraven Literary Ecclesia</a>. Email work to editors@ichnos.net');
+    vex.dialog.alert('ICHNOS is published according to no guidelines, biases, proclivities or schedule by <a href="https://www.unwin-dunraven.com">Unwin-Dunraven Literary Ecclesia</a>. Email work to editors@ichnos.net');
   });
 });

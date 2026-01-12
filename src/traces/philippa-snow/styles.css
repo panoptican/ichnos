@@ -1,22 +1,16 @@
 @font-face {
     font-family: 'alte_haas_groteskregular';
-    src: url('altehaasgroteskregular-webfont.eot');
-    src: url('altehaasgroteskregular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('altehaasgroteskregular-webfont.woff2') format('woff2'),
+    src: url('altehaasgroteskregular-webfont.woff2') format('woff2'),
          url('altehaasgroteskregular-webfont.woff') format('woff'),
-         url('altehaasgroteskregular-webfont.ttf') format('truetype'),
-         url('altehaasgroteskregular-webfont.svg#alte_haas_groteskregular') format('svg');
+         url('altehaasgroteskregular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'averia_serifregular';
-    src: url('averiaserif-regular-webfont.eot');
-    src: url('averiaserif-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('averiaserif-regular-webfont.woff2') format('woff2'),
+    src: url('averiaserif-regular-webfont.woff2') format('woff2'),
          url('averiaserif-regular-webfont.woff') format('woff'),
-         url('averiaserif-regular-webfont.ttf') format('truetype'),
-         url('averiaserif-regular-webfont.svg#averia_serifregular') format('svg');
+         url('averiaserif-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
