@@ -31,11 +31,15 @@
   },
   "homepage": "https://gitlab.com/udle/ichnos#README",
   "devDependencies": {
+    "agentation": "^2.2.0",
     "autoprefixer": "^6.4.1",
     "browser-sync": "^2.13.0",
+    "esbuild": "^0.27.3",
     "imagemin-cli": "^3.0.0",
     "node-sass": "^3.9.3",
     "postcss-cli": "^2.6.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
     "rimraf": "^2.5.4",
     "uglifyjs": "^2.4.10"
   },
