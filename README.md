@@ -15,10 +15,7 @@ Production is deployed to Cloudflare Pages from the `main` branch.
 - Build output directory: `src`
 - Custom domain: `ichnos.net`
 
-GitHub Actions deploys on pushes to `main` using repository secrets:
-
-- `CLOUDFLARE_API_TOKEN`
-- `CLOUDFLARE_ACCOUNT_ID`
+Use Cloudflare Pages Git integration so Cloudflare builds/deploys directly from `main`.
 
 ## Site structure
 
