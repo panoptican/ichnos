@@ -164,6 +164,29 @@
   color: #fff;
 }
 
+/* 404 */
+.missing {
+  color: #fff;
+  text-align: center;
+  padding: 0 10vw;
+}
+
+.missing-title {
+  font-family: noticia_textbold;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0 0 0.5em;
+}
+
+.missing-text {
+  font-family: work_sansregular;
+  font-size: 1.2rem;
+}
+
+.missing-text a {
+  color: #DBB700;
+}
+
 /* Navigation */
 .nav {
   height: 10vh;
