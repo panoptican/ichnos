@@ -21,7 +21,7 @@ ICHNOS is a literary journal, not a product, so "attribute" means the thing a re
 | A01 | repo (`CLAUDE.md`, `package.json` keywords) | "static literary journal … experimental poetry and prose"; keywords literature, poetry, journal, noise, experimental | n/a |
 | A02 | trace pages | six contributor bios; three with book publications and editorial roles | 6 of 6 |
 | A03 | `src/traces/*/` | six distinct stylesheets, font sets and scripts (D3, Three.js, Delaunay, magnifier) | 6 of 6 |
-| A04 | `src/js/scripts.js` | "published according to no guidelines, biases, proclivities or schedule … Email work to editors@ichnos.net" | 1 |
+| A04 | `src/index.html` `#submit` | "published according to no guidelines, biases, proclivities or schedule … Email work to editors@ichnos.net" | 1 |
 | A05 | all pages | `meta author`, JSON-LD `publisher`, `article:publisher` | 7 of 7 |
 
 ## Parked

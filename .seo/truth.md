@@ -10,11 +10,11 @@ Derived from the repo (worktree `main`, HEAD b79bf4c) and the live site on 2026-
 | Canonical origin | `https://ichnos.net/` (apex, https, trailing slash; no `www`) | `src/index.html` canonical, `src/robots.txt`, `src/sitemap.xml` | 2026-09-11 |
 | Language | `en` (`og:locale` `en_US`) | all seven pages | 2026-09-11 |
 | Publisher | Unwin-Dunraven Literary Ecclesia | `meta name=author`, JSON-LD `publisher` | 2026-09-11 |
-| Publisher site | `https://www.unwin-dunraven.com` | `src/js/scripts.js` line 11 (JS dialog only, not crawlable) | 2026-09-11 |
+| Publisher site | `https://www.unwin-dunraven.com` | `src/index.html` `#about` / `#submit` footer sections (crawlable HTML since 2026-09-12; JS dialog removed) | 2026-09-12 |
 | Publisher social | `https://www.facebook.com/unwindunraven` | `article:publisher` on every page | 2026-09-11 |
-| Submissions | email `editors@ichnos.net`; "no guidelines, biases, proclivities or schedule" | `src/js/scripts.js` line 11 | 2026-09-11 |
+| Submissions | email `editors@ichnos.net`; "no guidelines, biases, proclivities or schedule" | `src/index.html` `#submit` | 2026-09-12 |
 | Submission fee | none stated (negative claim: never say there is one) | absence in repo | 2026-09-11 |
-| Schedule / issues | none. ICHNOS has no issues, volumes, reading periods or calendar | `src/js/scripts.js` line 11 | 2026-09-11 |
+| Schedule / issues | none. ICHNOS has no issues, volumes, reading periods or calendar | `src/index.html` `#submit` | 2026-09-12 |
 | Description | "A body of work and its impetus, the invention of goad, both beast & attendant mobility." (meta uses `&`, JSON-LD uses `and`) | `src/index.html` lines 6, 41 | 2026-09-11 |
 | Tagline | "a journal by tooth, by claw, by will and fire" | `package.json` description (not on site) | 2026-09-11 |
 | Trace count | 6 | `src/sitemap.xml`, `src/index.html` cards, `CLAUDE.md` | 2026-09-11 |
@@ -81,5 +81,5 @@ n/a for a static journal. Negative claims worth holding:
 | Dev tooling in production | `src/index.html:152` loaded the 1.43 MB `js/agentation-bundle.js` (dev React, `localhost:4747`) on `/` | script tag removed, `src/js/agentation-bundle.js` deleted from the served tree; `dev/` copies kept for local use. Rule "No dev-only tooling ships in production HTML" in `truth-checks.json` guards it | 2026-09-12 |
 | Homepage description | JSON-LD "beast and attendant mobility" vs meta "beast & attendant mobility" | JSON-LD now uses "&", identical to the meta and og descriptions | 2026-09-12 |
 | Back-to-contents target | six traces linked `../../index.html#contents` (a 308 hop to `/`) | all six link `/#contents` | 2026-09-12 |
-| About / submit copy not crawlable | about text, publisher link, submissions email and editor lived only in a JS dialog; homepage had no `<h1>` and 48 words | `#about` and `#submit` sections in `src/index.html`; wordmark wrapped in `<h1>`; body 235 words; dialog now reads from those sections | 2026-09-12 |
+| About / submit copy not crawlable | about text, publisher link, submissions email and editor lived only in a JS dialog; homepage had no `<h1>` and 48 words | `#about` and `#submit` sections in `src/index.html`; wordmark wrapped in `<h1>`; body 235 words; dialog now reads from those sections; dialog, vex and jQuery removed entirely later the same day (footer only) | 2026-09-12 |
 | Soft 404 site-wide | every unknown path returned 200 with the homepage | `src/404.html` (noindex, links `/#contents`); verify live after deploy | 2026-09-12 |

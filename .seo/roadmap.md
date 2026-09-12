@@ -34,7 +34,6 @@ Seven URLs: `/` and six `/traces/<slug>/`. See `link-inventory.md`.
 | File | What lives there |
 |---|---|
 | `src/index.html` | cover, contents cards, all meta and JSON-LD for `/` |
-| `src/js/scripts.js` | about and submit dialog text |
 | `src/traces/<slug>/index.html` | one trace, self-contained |
 | `src/sitemap.xml`, `src/robots.txt` | hand-maintained |
 
@@ -43,7 +42,7 @@ Seven URLs: `/` and six `/traces/<slug>/`. See `link-inventory.md`.
 1. ~~Remove the 1.43 MB dev-only `agentation-bundle.js` from `src/index.html`~~ — done 2026-09-12 (`correct`; live Lighthouse mobile perf 65 → 90, LCP 4.7 s → 2.9 s, 451 KiB → 223 KiB).
 2. ~~Retarget the six trace back-links to `/#contents`~~ — done 2026-09-12 (`repair`, c4134df).
 2b. ~~Add `src/404.html`~~ — done 2026-09-12 (`repair`, 4fe00a5). Verify live returns 404 after deploy.
-3. ~~Homepage `<h1>`, crawlable about / submit copy, hrefs on every card, `<main>`~~ — done 2026-09-12 (`repair`, 7718874; local Lighthouse a11y 100, seo 100). Follow-up: the nav still opens a vex dialog with the same text that now sits below it; dropping vex + jQuery (~100 KB) from `/` is a later `repair`.
+3. ~~Homepage `<h1>`, crawlable about / submit copy, hrefs on every card, `<main>`~~ — done 2026-09-12 (`repair`, 7718874; local Lighthouse a11y 100, seo 100). Follow-up done 2026-09-12 (`repair`, run 2026-09-12-2310): nav, vex dialog, jQuery and `src/js/` removed; about/submit live only in the `<footer>`; the 10 empty cards are decorative `<div>`s; `/` ships zero first-party JavaScript.
 4. Unique meta descriptions per trace (six are boilerplate "<Title> on ICHNOS").
 5. ~~`lastmod` in the sitemap from content dates~~ (done 2026-09-12, f58bd7c); `datePublished` / `dateModified` in each trace's JSON-LD still open.
 6. Fix the Taren `article:author` tag (points at the co-translator's profile). Meta / JSON-LD description mismatch on `/` fixed 2026-09-12.

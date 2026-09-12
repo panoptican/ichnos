@@ -9,8 +9,8 @@
 | Slug | URL | Title (anchor-text candidate) | Linked by |
 |---|---|---|---|
 | `/` | https://ichnos.net/ | ICHNOS | every trace (as `/#contents`, since 2026-09-12) |
-| `/#about` | https://ichnos.net/#about | about ICHNOS | nav on `/` (crawlable section since 2026-09-12) |
-| `/#submit` | https://ichnos.net/#submit | submit to ICHNOS | nav + 10 empty TOC cards on `/` |
+| `/#about` | https://ichnos.net/#about | about ICHNOS | footer section on `/` (no nav link since 2026-09-12; reachable by scroll and by fragment) |
+| `/#submit` | https://ichnos.net/#submit | submit to ICHNOS | footer section on `/` (nav and card links removed 2026-09-12; the 10 empty cards are decorative `<div>`s) |
 | `/404.html` | served for any unknown path | Not found /// ICHNOS | — (noindex; links `/#contents`) |
 
 ### Content (traces)
@@ -24,7 +24,7 @@
 | `/traces/kristin-peterson/` | https://ichnos.net/traces/kristin-peterson/ | room tone + a muse in its own miserable shape | Kristin Peterson | `/` only |
 | `/traces/michael-thomas-taren/` | https://ichnos.net/traces/michael-thomas-taren/ | from In Smithereens | Michael Thomas Taren | `/` only |
 
-**Link graph as found:** `/` → 6 traces; each trace → `/` only. No trace links to another trace. Every trace has exactly one inbound internal link, from the homepage. Since 2026-09-12 every anchor on the homepage has an `href` (the 10 empty cards link `#submit`) and every trace back-link is `/#contents`, so there is no redirect hop anywhere in the graph. External links added to `/`: `https://www.unwin-dunraven.com` (publisher, twice) and `mailto:editors@ichnos.net`.
+**Link graph as found:** `/` → 6 traces; each trace → `/` only. No trace links to another trace. Every trace has exactly one inbound internal link, from the homepage. Since 2026-09-12 every anchor on the homepage has an `href` (the 10 empty cards are no longer anchors at all) and every trace back-link is `/#contents`, so there is no redirect hop anywhere in the graph. External links added to `/`: `https://www.unwin-dunraven.com` (publisher, twice) and `mailto:editors@ichnos.net`.
 
 ### Tools / free utilities
 

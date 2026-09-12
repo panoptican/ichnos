@@ -20,6 +20,7 @@
 | 2026-09-12 | repair · sitemap · `lastmod` on 7 URLs | sitemap | /sitemap.xml | (freshness) | n/a | fix | pre-state: no lastmod | n/a | — | f58bd7c |
 | 2026-09-12 | repair · / · h1, crawlable about/submit, hrefs, `<main>` | hub | / | (relevance / a11y) | n/a | fix | pre-state: h1=0, 48 words, 16 href-less anchors, a11y 95 / seo 92; after: h1=1, 235 words, 0 href-less, a11y 100 / seo 100 (local) | 2027-03 | 6 traces, #about, #submit | 7718874 |
 | 2026-09-12 | repair · 404 · add `src/404.html` | system | /404.html | (link health) | n/a | fix | pre-state: unknown paths returned 200 with the homepage | n/a | /#contents | 4fe00a5 |
+| 2026-09-12 | repair · / · drop nav, vex dialog, jQuery; about/submit footer only | hub | / | (speed / a11y) | n/a | fix | pre-state: nav + 10 cards opened a dialog duplicating the footer text; `/` loaded jQuery 85.6 KB + vex 7 KB + 2 vex stylesheets 17 KB | n/a | — | see run 2026-09-12-2310 |
 
 <!-- Append one row per piece at Step 5. Type ∈ guide | how-to | listicle | definition | comparison | data-study | resource | opinion | case-study | tool -->
 <!-- Tools: add a maintenance note to the row for anything with decaying data (fee schedules, rates, limits) — what expires and roughly when. -->
