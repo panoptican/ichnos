@@ -67,5 +67,23 @@
       "[Ss]ubmittable"
     ],
     "must_match": []
+  },
+  {
+    "claim": "AI crawlers are disallowed and content signals forbid AI input and training",
+    "paths": [
+      "src/robots.txt"
+    ],
+    "must_not_match": [
+      "ai-train=yes",
+      "ai-input=yes"
+    ],
+    "must_match": [
+      "Content-Signal: search=yes, ai-input=no, ai-train=no",
+      "User-agent: GPTBot",
+      "User-agent: ClaudeBot",
+      "User-agent: Google-Extended",
+      "User-agent: CCBot",
+      "User-agent: PerplexityBot"
+    ]
   }
 ]

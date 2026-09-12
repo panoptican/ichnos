@@ -1,4 +1,74 @@
+# ICHNOS — https://ichnos.net/
+# Search engines are welcome. AI crawlers are not: this content may not be
+# collected for model training or for feeding generative answers.
+# Cloudflare enforces the same policy at the edge; this file states it in the repo.
+
 User-agent: *
+Content-Signal: search=yes, ai-input=no, ai-train=no
 Allow: /
+
+# OpenAI
+User-agent: GPTBot
+User-agent: ChatGPT-User
+User-agent: OAI-SearchBot
+Disallow: /
+
+# Anthropic
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: anthropic-ai
+Disallow: /
+
+# Google (Gemini training / grounding; Googlebot itself stays allowed)
+User-agent: Google-Extended
+Disallow: /
+
+# Apple (Apple Intelligence training; Applebot itself stays allowed)
+User-agent: Applebot-Extended
+Disallow: /
+
+# Meta
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: FacebookBot
+Disallow: /
+
+# Amazon / Alexa
+User-agent: Amazonbot
+Disallow: /
+
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+Disallow: /
+
+# Microsoft / Copilot
+User-agent: Bingbot-Extended
+Disallow: /
+
+# Mistral, Cohere, You.com, DuckDuckGo AI, AI2
+User-agent: MistralAI-User
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: YouBot
+User-agent: DuckAssistBot
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+Disallow: /
+
+# Dataset and bulk scrapers
+User-agent: CCBot
+User-agent: Bytespider
+User-agent: Diffbot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: Timpibot
+User-agent: ImagesiftBot
+User-agent: PanguBot
+User-agent: Kangaroo Bot
+User-agent: Webzio-Extended
+User-agent: Scrapy
+Disallow: /
 
 Sitemap: https://ichnos.net/sitemap.xml

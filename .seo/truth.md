@@ -9,6 +9,7 @@ Derived from the repo (worktree `main`, HEAD b79bf4c) and the live site on 2026-
 | Site name | ICHNOS | `src/index.html` `<title>`, JSON-LD `name` | 2026-09-11 |
 | Canonical origin | `https://ichnos.net/` (apex, https, trailing slash; no `www`) | `src/index.html` canonical, `src/robots.txt`, `src/sitemap.xml` | 2026-09-11 |
 | Language | `en` (`og:locale` `en_US`) | all seven pages | 2026-09-11 |
+| AI crawler policy | Blocked. `src/robots.txt` disallows all known AI user agents and states `Content-Signal: search=yes, ai-input=no, ai-train=no`; Cloudflare "Block AI bots" + managed robots.txt enforce at the edge. Search crawlers allowed. Owner decision 2026-09-12; AEO lane closed. | `src/robots.txt`, live `https://ichnos.net/robots.txt`, NY-3 | 2026-09-12 |
 | Publisher | Unwin-Dunraven Literary Ecclesia | `meta name=author`, JSON-LD `publisher` | 2026-09-11 |
 | Publisher site | `https://www.unwin-dunraven.com` | `src/index.html` `#about` / `#submit` footer sections (crawlable HTML since 2026-09-12; JS dialog removed) | 2026-09-12 |
 | Publisher social | `https://www.facebook.com/unwindunraven` | `article:publisher` on every page | 2026-09-11 |

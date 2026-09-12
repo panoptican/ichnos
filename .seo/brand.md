@@ -15,6 +15,7 @@ We are an **online experimental literary journal** for **readers and writers of 
 - **Free tier?** n/a (not a product)
 - **Publisher:** Unwin-Dunraven Literary Ecclesia (`https://www.unwin-dunraven.com`, facebook.com/unwindunraven)
 - **Submissions:** email `editors@ichnos.net`. "Published according to no guidelines, biases, proclivities or schedule." Submissions are **open** (owner, 2026-09-12). Say so plainly on-site; still no portal, fee, schedule or guidelines.
+- **AI crawlers:** blocked, by owner decision (2026-09-12). ICHNOS content may not be collected for model training or generative answers. `src/robots.txt` disallows every known AI crawler and carries `Content-Signal: search=yes, ai-input=no, ai-train=no`; Cloudflare's managed AI-bot block enforces it at the edge. Consequence accepted: the site will not be cited by ChatGPT, Claude, Perplexity, Copilot or Alexa. Search engines (Googlebot, Bingbot, Applebot) stay allowed. The AEO lane is closed.
 
 ## Audience
 
