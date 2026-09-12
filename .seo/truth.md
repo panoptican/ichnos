@@ -21,7 +21,10 @@ Derived from the repo (worktree `main`, HEAD b79bf4c) and the live site on 2026-
 | Hosting | Cloudflare Pages, project `ichnos`, output dir `src`, branch `main`, no build step | `wrangler.toml`, `README.md` | 2026-09-11 |
 | Analytics | Spidleweb (Umami-style) `analytics.spidleweb.net`, website-id `189ef568-f9bc-4a04-ab30-f10e57cefcdd`, on all 7 pages. No Plausible, GA, GTM, pixel | all pages; `CLAUDE.md` lines 47–49 | 2026-09-11 |
 | Facebook App ID | `896526060445261` | `fb:app_id` on every page | 2026-09-11 |
-| Developer | Jason Spidle; repo `github.com/panoptican/ichnos` | `package.json` author; git remote | 2026-09-11 |
+| Web designer | Jason Spidle; repo `github.com/panoptican/ichnos` | `package.json` author; git remote; owner statement 2026-09-12 | 2026-09-12 |
+| Editor | Garett Strickland | owner statement 2026-09-12 (not yet on any page) | 2026-09-12 |
+| Submissions status | open | owner statement 2026-09-12 | 2026-09-12 |
+| Pageview counts in copy | never (negative claim) | owner statement 2026-09-12 | 2026-09-12 |
 | License | MIT | `package.json` | 2026-09-11 |
 | Founded / first published | 2016-09-13 (initial commit "ICHNOS through Traces 1-4") | git log | 2026-09-11 |
 
@@ -68,13 +71,15 @@ n/a for a static journal. Negative claims worth holding:
 | Claim | Code says | Site says | Which is right |
 |---|---|---|---|
 | Repository URL | `package.json` `repository.url` = `gitlab.com/udle/ichnos` | git remote = `github.com/panoptican/ichnos` | GitHub (package.json stale; not public-facing) |
-| Homepage description | JSON-LD "beast and attendant mobility" | meta "beast & attendant mobility" | either; make them identical |
 | Taren author link | `article:author` → facebook.com/purdeylordkreiden | JSON-LD author = Michael Thomas Taren | JSON-LD; the meta tag points at the wrong person |
 | Crawford paint link | anchor text "bluhz.com" | href `https://b-l-u-h-z.tumblr.com/` | unknown; verify which resolves |
-| Back-to-contents target | traces link `../../index.html#contents` | canonical is `https://ichnos.net/` | canonical. Live check 2026-09-12: `/index.html` 308 → `/`, so this is a redirect hop, not a duplicate URL; still a `repair` (one hop on every trace's only link) |
 
 ### Resolved
 
 | Claim | Was | Fixed | Run |
 |---|---|---|---|
 | Dev tooling in production | `src/index.html:152` loaded the 1.43 MB `js/agentation-bundle.js` (dev React, `localhost:4747`) on `/` | script tag removed, `src/js/agentation-bundle.js` deleted from the served tree; `dev/` copies kept for local use. Rule "No dev-only tooling ships in production HTML" in `truth-checks.json` guards it | 2026-09-12 |
+| Homepage description | JSON-LD "beast and attendant mobility" vs meta "beast & attendant mobility" | JSON-LD now uses "&", identical to the meta and og descriptions | 2026-09-12 |
+| Back-to-contents target | six traces linked `../../index.html#contents` (a 308 hop to `/`) | all six link `/#contents` | 2026-09-12 |
+| About / submit copy not crawlable | about text, publisher link, submissions email and editor lived only in a JS dialog; homepage had no `<h1>` and 48 words | `#about` and `#submit` sections in `src/index.html`; wordmark wrapped in `<h1>`; body 235 words; dialog now reads from those sections | 2026-09-12 |
+| Soft 404 site-wide | every unknown path returned 200 with the homepage | `src/404.html` (noindex, links `/#contents`); verify live after deploy | 2026-09-12 |

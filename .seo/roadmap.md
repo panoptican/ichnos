@@ -40,13 +40,13 @@ Seven URLs: `/` and six `/traces/<slug>/`. See `link-inventory.md`.
 
 ## Phase 0 — Technical foundations (open items, in the order the health diff ranks them)
 
-1. ~~Remove the 1.43 MB dev-only `agentation-bundle.js` from `src/index.html`~~ — done 2026-09-12 (`correct`; local Lighthouse mobile perf 55 → 94, page weight 1.73 MB → 304 KB). Live re-measure after deploy.
-2. Retarget the six trace back-links from `../../index.html#contents` to `/#contents`. Cloudflare already 308s `/index.html` → `/` (verified 2026-09-12), so no `_redirects` file is needed; the fix is removing the hop.
-2b. Add `src/404.html`. Without it every unknown path (including `/llms.txt`) returns 200 with the homepage — a site-wide soft 404 (found 2026-09-12).
-3. Give the homepage an `<h1>` (or accessible wordmark text) and crawlable about / submit copy.
+1. ~~Remove the 1.43 MB dev-only `agentation-bundle.js` from `src/index.html`~~ — done 2026-09-12 (`correct`; live Lighthouse mobile perf 65 → 90, LCP 4.7 s → 2.9 s, 451 KiB → 223 KiB).
+2. ~~Retarget the six trace back-links to `/#contents`~~ — done 2026-09-12 (`repair`, c4134df).
+2b. ~~Add `src/404.html`~~ — done 2026-09-12 (`repair`, 4fe00a5). Verify live returns 404 after deploy.
+3. ~~Homepage `<h1>`, crawlable about / submit copy, hrefs on every card, `<main>`~~ — done 2026-09-12 (`repair`, 7718874; local Lighthouse a11y 100, seo 100). Follow-up: the nav still opens a vex dialog with the same text that now sits below it; dropping vex + jQuery (~100 KB) from `/` is a later `repair`.
 4. Unique meta descriptions per trace (six are boilerplate "<Title> on ICHNOS").
-5. `lastmod` in the sitemap from content dates, `datePublished` in JSON-LD.
-6. Fix the Taren `article:author` tag; make meta and JSON-LD descriptions identical.
+5. ~~`lastmod` in the sitemap from content dates~~ (done 2026-09-12, f58bd7c); `datePublished` / `dateModified` in each trace's JSON-LD still open.
+6. Fix the Taren `article:author` tag (points at the co-translator's profile). Meta / JSON-LD description mismatch on `/` fixed 2026-09-12.
 7. Philippa Snow page: stop duplicating the essay text five times in the DOM.
 8. `_headers` with sane caching for fonts, images, JS.
 9. Drop dead assets (`skeleton.css`, unused fonts) to trim repo weight; not user-facing.

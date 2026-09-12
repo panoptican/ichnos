@@ -14,7 +14,7 @@ We are an **online experimental literary journal** for **readers and writers of 
 - **Pricing structure:** n/a. Free to read. No submission fee.
 - **Free tier?** n/a (not a product)
 - **Publisher:** Unwin-Dunraven Literary Ecclesia (`https://www.unwin-dunraven.com`, facebook.com/unwindunraven)
-- **Submissions:** email `editors@ichnos.net`. "Published according to no guidelines, biases, proclivities or schedule." `[ASK]` Are submissions currently open? The site implies yes; nothing has been published since 2017.
+- **Submissions:** email `editors@ichnos.net`. "Published according to no guidelines, biases, proclivities or schedule." Submissions are **open** (owner, 2026-09-12). Say so plainly on-site; still no portal, fee, schedule or guidelines.
 
 ## Audience
 
@@ -65,19 +65,20 @@ Peers who rank for the same discovery queries and draw the same submitters. `[AS
 
 ## Proprietary data & first-hand experience
 
-- **Product/usage data we can anonymize and cite:** Spidleweb pageview counts per trace (website id `189ef568-…`). `[ASK]` is the dashboard reachable, and may aggregate numbers ever appear in copy? Default: no.
+- **Product/usage data we can anonymize and cite:** Spidleweb pageview counts per trace (website id `189ef568-…`). Owner decision 2026-09-12: **Spidleweb visit counts never appear in copy.**
 - **How to get at it:** `analytics.spidleweb.net` dashboard (owner login). Not connected to this skill.
 - **Off-limits, never publish:** submitter names, rejected work, correspondence, anything from `editors@ichnos.net`, per-visitor data.
 - **First-hand experience:** ten years of hand-building one-off literary web pages; the codebase itself is the evidence.
 - **Original research we can run:** none appropriate. ICHNOS does not publish about itself (anti-positioning 5).
-- **Internal experts:** the editors (unnamed on site). `[ASK]` should any editor be named for authorship / E-E-A-T purposes?
+- **Internal experts:** **Garett Strickland, editor** (owner, 2026-09-12; may be named on-site). **Jason Spidle, web designer** (may be credited as designer/builder, not as editor).
 
 ## Author / E-E-A-T
 
 - **Default author:** each trace's contributor (already in JSON-LD `author` as `Person`). Publisher-level authorship is `Unwin-Dunraven Literary Ecclesia`.
 - **Credentials:** contributor bios on each trace page, written c. 2016 and now dated. Philippa Snow's later books and Dennis James Sweeney's later books are not reflected.
 - **Author bio URL / profile:** none on site. `article:author` points at Facebook profiles (one of them, on the Taren page, is the co-translator's profile, not the author's).
-- **Developer / maintainer:** Jason Spidle (`package.json`), not credited on the site.
+- **Editor:** Garett Strickland (owner-confirmed 2026-09-12). May be named on-site for authorship/E-E-A-T.
+- **Web designer / maintainer:** Jason Spidle (`package.json`; owner-confirmed 2026-09-12). Credit as web designer.
 
 ## Links to existing surfaces
 

@@ -8,9 +8,10 @@
 
 | Slug | URL | Title (anchor-text candidate) | Linked by |
 |---|---|---|---|
-| `/` | https://ichnos.net/ | ICHNOS | every trace (as `../../index.html#contents`, non-canonical form; see repair note) |
-| `/about` | none | about text is a JS dialog on `/`; no URL | — |
-| `/submit` | none | submit text is a JS dialog on `/`; no URL | — |
+| `/` | https://ichnos.net/ | ICHNOS | every trace (as `/#contents`, since 2026-09-12) |
+| `/#about` | https://ichnos.net/#about | about ICHNOS | nav on `/` (crawlable section since 2026-09-12) |
+| `/#submit` | https://ichnos.net/#submit | submit to ICHNOS | nav + 10 empty TOC cards on `/` |
+| `/404.html` | served for any unknown path | Not found /// ICHNOS | — (noindex; links `/#contents`) |
 
 ### Content (traces)
 
@@ -23,9 +24,7 @@
 | `/traces/kristin-peterson/` | https://ichnos.net/traces/kristin-peterson/ | room tone + a muse in its own miserable shape | Kristin Peterson | `/` only |
 | `/traces/michael-thomas-taren/` | https://ichnos.net/traces/michael-thomas-taren/ | from In Smithereens | Michael Thomas Taren | `/` only |
 
-**Link graph as found:** `/` → 6 traces; each trace → `/` only. No trace links to another trace. Every trace has exactly one inbound internal link, from the homepage. The homepage also carries 14 `<a class="submit-link">` cards with no `href`.
-
-**Repair note:** all six back-links target `../../index.html#contents`, which resolves to `https://ichnos.net/index.html#contents`, a duplicate of the canonical `/`. There is no `_redirects` file to fold `/index.html` into `/`.
+**Link graph as found:** `/` → 6 traces; each trace → `/` only. No trace links to another trace. Every trace has exactly one inbound internal link, from the homepage. Since 2026-09-12 every anchor on the homepage has an `href` (the 10 empty cards link `#submit`) and every trace back-link is `/#contents`, so there is no redirect hop anywhere in the graph. External links added to `/`: `https://www.unwin-dunraven.com` (publisher, twice) and `mailto:editors@ichnos.net`.
 
 ### Tools / free utilities
 

@@ -1,5 +1,5 @@
 {
-  "_comment": "Merged config for /seo. Written once by references/foundation.md \u00a71 and never overwritten. Real configs drift from this template \u2014 add keys where they fit the file you found, never reshape an existing config to match this shape. null means 'not detected yet, fill on first need'.",
+  "_comment": "Merged config for /seo. Written once by references/foundation.md §1 and never overwritten. Real configs drift from this template — add keys where they fit the file you found, never reshape an existing config to match this shape. null means 'not detected yet, fill on first need'.",
   "site": {
     "domain": "https://ichnos.net",
     "name": "ICHNOS",
@@ -57,12 +57,12 @@
   },
   "gsc": {
     "site_url": null,
-    "_comment": "The EXACT property string from list_properties. 'sc-domain:example.com' and 'https://example.com/' are not interchangeable. null means the site is not verified in this Google account \u2014 say it once and carry on."
+    "_comment": "The EXACT property string from list_properties. 'sc-domain:example.com' and 'https://example.com/' are not interchangeable. null means the site is not verified in this Google account — say it once and carry on."
   },
   "bing": {
     "api_key_env": null,
     "site_url": null,
-    "_comment": "Optional. api_key_env names the environment variable holding the Bing Webmaster API key; never store the key itself. The AI Performance report is UI-only \u2014 no API. Record Bing as a separate panel, never summed with Google."
+    "_comment": "Optional. api_key_env names the environment variable holding the Bing Webmaster API key; never store the key itself. The AI Performance report is UI-only — no API. Record Bing as a separate panel, never summed with Google."
   },
   "openseo": {
     "project_id": null,
@@ -105,7 +105,7 @@
     "src/index.html",
     "src/traces/"
   ],
-  "_comment_content_surfaces": "Where public pages live in this repo. Empty for a DB or CMS-backed site \u2014 record the CMS above and read the sitemap instead.",
+  "_comment_content_surfaces": "Where public pages live in this repo. Empty for a DB or CMS-backed site — record the CMS above and read the sitemap instead.",
   "priority_pages": [
     "https://ichnos.net/",
     "https://ichnos.net/traces/philippa-snow/",
@@ -116,29 +116,29 @@
   "crawl_hubs": [
     "/"
   ],
-  "_comment_crawl_hubs": "Pages Google crawls most often, from batch_url_inspection last_crawled (references/gsc.md \u00a77a). Every new page takes \u22651 inbound link from here. Re-derive every few months.",
+  "_comment_crawl_hubs": "Pages Google crawls most often, from batch_url_inspection last_crawled (references/gsc.md §7a). Every new page takes ≥1 inbound link from here. Re-derive every few months.",
   "authority": {
     "dr": null,
     "dr_source": "none",
     "kd_ceiling": "easy",
     "kd_source": "estimated (no GSC; 7-page site, no known backlink profile)",
     "last_read": "2026-09-11",
-    "_comment": "kd_ceiling is the playable difficulty bucket, derived from GSC page-1 positions, NOT from dr. KD scales are vendor-specific \u2014 a bucket from one vendor is meaningless against another, so always store kd_source."
+    "_comment": "kd_ceiling is the playable difficulty bucket, derived from GSC page-1 positions, NOT from dr. KD scales are vendor-specific — a bucket from one vendor is meaningless against another, so always store kd_source."
   },
   "budget": {
     "per_run_usd": 2.0,
     "ai_panel_cadence_days": 14,
     "health_diff_cadence_days": 1,
     "claim_reverify_sample": 3,
-    "_comment": "Unattended runs stay under per_run_usd. Cost never overrides a quality gate \u2014 if a decision needs a number, buy it or say you couldn't and why.",
+    "_comment": "Unattended runs stay under per_run_usd. Cost never overrides a quality gate — if a decision needs a number, buy it or say you couldn't and why.",
     "link_check_cadence_days": 7
   },
   "select": {
     "floor": 9,
-    "_comment": "Below this rubric score (of a possible 20) the best unblocked candidate loses to measure-only. See references/select.md \u00a77."
+    "_comment": "Below this rubric score (of a possible 20) the best unblocked candidate loses to measure-only. See references/select.md §7."
   },
   "paths": {
-    "_comment": "Only `roadmap` is genuinely relocatable (it predates .seo/ and may live in docs/). Every other entry records where the default already is \u2014 the references address those files by their literal .seo/ path, so moving one here does not move it.",
+    "_comment": "Only `roadmap` is genuinely relocatable (it predates .seo/ and may live in docs/). Every other entry records where the default already is — the references address those files by their literal .seo/ path, so moving one here does not move it.",
     "roadmap": ".seo/roadmap.md",
     "ledger": ".seo/content-ledger.md",
     "truth": ".seo/truth.md",
@@ -191,7 +191,7 @@
     }
   },
   "sampling": {
-    "_comment": "How hard to measure an attribute by priority tier: prompt variants \u00d7 platforms \u00d7 repeats.",
+    "_comment": "How hard to measure an attribute by priority tier: prompt variants × platforms × repeats.",
     "p1": {
       "variants": 6,
       "platforms": 4,
@@ -261,7 +261,9 @@
   },
   "git": {
     "_comment": "How a run ends. none: show the diff. commit: commit code + .seo/ on the current branch, never push. pr: commit, push, open a PR against main with the run record as body, never merge. Use pr for the worktree loop (fresh worktree -> /seo -> PR -> merge -> repeat).",
-    "mode": "commit"
+    "mode": "commit",
+    "push_after_commit": true,
+    "_comment_push": "Owner instruction 2026-09-12: after every committed improvement, push main (Cloudflare Pages deploys from main). Pushing is deploying; a failed gate still blocks the commit."
   },
   "_comment_competitors": "sitemap_url enables the weekly competitor delta panel (measure.md 6d): health_diff.py fingerprints it into .seo/competitors/<domain>/ and competitor_diff.py reports new pages, retitles and keyword gains. null skips the sitemap half; the ranked-keyword half still runs when DataForSEO is connected.",
   "repo": {

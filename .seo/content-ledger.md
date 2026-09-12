@@ -16,6 +16,10 @@
 | 2016-09-13 | from In Smithereens — Michael Thomas Taren | prose poem | /traces/michael-thomas-taren/ | Michael Thomas Taren In Smithereens | n/a | easy · estimated | none | n/a | / | 62f7c28 |
 | 2016-09-13 | ICHNOS (cover / contents) | hub | / | ichnos; ichnos journal | n/a | easy · estimated | none | n/a | all traces | 62f7c28 |
 | 2026-09-12 | correct · / · remove dev-only agentation bundle | hub | / | (speed / truth) | n/a | fix | pre-state: `src/index.html:152` loaded 1.43 MB `js/agentation-bundle.js`; local Lighthouse mobile perf 55, LCP 10.4 s, 1.73 MB; live Lighthouse perf 65, LCP 4.7 s, TBT 436 ms | n/a | — | see run 2026-09-12-2205 |
+| 2026-09-12 | repair · traces · retarget back-links to `/#contents` | trace | 6 traces | (link health) | n/a | fix | pre-state: six links to `../../index.html#contents`, each a 308 hop | n/a | / | c4134df |
+| 2026-09-12 | repair · sitemap · `lastmod` on 7 URLs | sitemap | /sitemap.xml | (freshness) | n/a | fix | pre-state: no lastmod | n/a | — | f58bd7c |
+| 2026-09-12 | repair · / · h1, crawlable about/submit, hrefs, `<main>` | hub | / | (relevance / a11y) | n/a | fix | pre-state: h1=0, 48 words, 16 href-less anchors, a11y 95 / seo 92; after: h1=1, 235 words, 0 href-less, a11y 100 / seo 100 (local) | 2027-03 | 6 traces, #about, #submit | 7718874 |
+| 2026-09-12 | repair · 404 · add `src/404.html` | system | /404.html | (link health) | n/a | fix | pre-state: unknown paths returned 200 with the homepage | n/a | /#contents | 4fe00a5 |
 
 <!-- Append one row per piece at Step 5. Type ∈ guide | how-to | listicle | definition | comparison | data-study | resource | opinion | case-study | tool -->
 <!-- Tools: add a maintenance note to the row for anything with decaying data (fee schedules, rates, limits) — what expires and roughly when. -->
@@ -33,7 +37,7 @@
 
 | Slug / URL | Published | Indexed? (state · checked) | Read @28d (clicks · impr · pos) | Read @56d (clicks · impr · pos) | Site-wide same window (clicks · impr) | Best lever (recover/CTR/rank · est. clicks) | State | Note / next action |
 |---|---|---|---|---|---|---|---|---|
-| / | 2016-09-13 | unknown (no GSC · 2026-09-11) | — | — | — | — | unmeasured | homepage has no h1, no crawlable brand text; 1.43 MB dev bundle removed 2026-09-12 (re-measure live after deploy) |
+| / | 2016-09-13 | unknown (no GSC · 2026-09-11) | — | — | — | — | unmeasured | 2026-09-12: dev bundle removed (live Lighthouse perf 65 → 90), h1 + crawlable about/submit added, every anchor has an href; live re-measure pending deploy of 7718874 |
 | /traces/meagen-crawford/ | 2016-09-13 | unknown (no GSC · 2026-09-11) | — | — | — | — | unmeasured | boilerplate meta description |
 | /traces/rem-plus-rom/ | 2016-09-14 | unknown (no GSC · 2026-09-11) | — | — | — | — | unmeasured | 4 MB of JPEG; boilerplate description |
 | /traces/philippa-snow/ | 2016-09-13 | unknown (no GSC · 2026-09-11) | — | — | — | — | unmeasured | essay text duplicated 5x in DOM; boilerplate description |
