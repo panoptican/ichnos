@@ -1,0 +1,287 @@
+{
+  "site": "https://ichnos.net",
+  "path_tested": "/",
+  "robots_source": "https://ichnos.net/robots.txt",
+  "robots_status": 200,
+  "robots_present": true,
+  "agents": [
+    {
+      "agent": "OAI-SearchBot",
+      "vendor": "OpenAI",
+      "kind": "retrieval",
+      "purpose": "powers ChatGPT search results",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "ChatGPT-User",
+      "vendor": "OpenAI",
+      "kind": "user",
+      "purpose": "user-triggered page fetch",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "GPTBot",
+      "vendor": "OpenAI",
+      "kind": "training",
+      "purpose": "training crawler",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "GPTBot"
+    },
+    {
+      "agent": "ClaudeBot",
+      "vendor": "Anthropic",
+      "kind": "retrieval",
+      "purpose": "crawler",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "ClaudeBot"
+    },
+    {
+      "agent": "Claude-SearchBot",
+      "vendor": "Anthropic",
+      "kind": "retrieval",
+      "purpose": "search indexing",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Claude-User",
+      "vendor": "Anthropic",
+      "kind": "user",
+      "purpose": "user-triggered page fetch",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "anthropic-ai",
+      "vendor": "Anthropic",
+      "kind": "training",
+      "purpose": "older agent name, still seen",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Googlebot",
+      "vendor": "Google",
+      "kind": "retrieval",
+      "purpose": "the index AI Overviews and AI Mode draw from",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Google-Extended",
+      "vendor": "Google",
+      "kind": "training",
+      "purpose": "Gemini training and grounding. does NOT gate AI Overviews",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "Google-Extended"
+    },
+    {
+      "agent": "GoogleOther",
+      "vendor": "Google",
+      "kind": "training",
+      "purpose": "misc Google crawling",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "PerplexityBot",
+      "vendor": "Perplexity",
+      "kind": "retrieval",
+      "purpose": "indexing",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Perplexity-User",
+      "vendor": "Perplexity",
+      "kind": "user",
+      "purpose": "user-triggered page fetch",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "bingbot",
+      "vendor": "Microsoft",
+      "kind": "retrieval",
+      "purpose": "the index Copilot draws from",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Applebot",
+      "vendor": "Apple",
+      "kind": "retrieval",
+      "purpose": "Siri and Spotlight suggestions",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Applebot-Extended",
+      "vendor": "Apple",
+      "kind": "training",
+      "purpose": "training opt-out control",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "Applebot-Extended"
+    },
+    {
+      "agent": "CCBot",
+      "vendor": "CommonCrawl",
+      "kind": "training",
+      "purpose": "feeds many downstream datasets. broad, delayed effects",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "CCBot"
+    },
+    {
+      "agent": "Amazonbot",
+      "vendor": "Amazon",
+      "kind": "retrieval",
+      "purpose": "Alexa and Amazon surfaces",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "Amazonbot"
+    },
+    {
+      "agent": "meta-externalagent",
+      "vendor": "Meta",
+      "kind": "training",
+      "purpose": "Meta AI training",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "meta-externalagent"
+    },
+    {
+      "agent": "Bytespider",
+      "vendor": "ByteDance",
+      "kind": "training",
+      "purpose": "ByteDance crawler",
+      "allowed": false,
+      "matched_rule": "Disallow: /",
+      "matched_user_agent": "Bytespider"
+    },
+    {
+      "agent": "cohere-ai",
+      "vendor": "Cohere",
+      "kind": "training",
+      "purpose": "Cohere crawler",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Diffbot",
+      "vendor": "Diffbot",
+      "kind": "training",
+      "purpose": "knowledge graph extraction",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "omgilibot",
+      "vendor": "Webz.io",
+      "kind": "training",
+      "purpose": "web data collection",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "YouBot",
+      "vendor": "You.com",
+      "kind": "retrieval",
+      "purpose": "You.com search",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "AI2Bot",
+      "vendor": "AI2",
+      "kind": "training",
+      "purpose": "Allen Institute crawler",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    },
+    {
+      "agent": "Timpibot",
+      "vendor": "Timpi",
+      "kind": "training",
+      "purpose": "decentralised index",
+      "allowed": true,
+      "matched_rule": "Allow: /",
+      "matched_user_agent": "*"
+    }
+  ],
+  "llms_txt": {
+    "llms.txt": {
+      "present": true,
+      "status": 200,
+      "bytes": 9047,
+      "read_truncated": false,
+      "has_title": false,
+      "title": null,
+      "has_summary": false,
+      "sections": [],
+      "links": [],
+      "links_without_description": 0,
+      "issues": [
+        "no '# Name' title on the first line",
+        "no '> one-sentence summary' blockquote near the top",
+        "no '## Section' headings, so the file has no shape",
+        "no '- [Title](url): description' links, which is the whole point of the file"
+      ],
+      "link_check": null
+    },
+    "llms-full.txt": {
+      "present": true,
+      "status": 200,
+      "bytes": 9047,
+      "read_truncated": false
+    }
+  },
+  "notes": [
+    "robots.txt names user agents not in this list: CloudflareBrowserRenderingCrawler. Look them up before assuming they are irrelevant, and check for typos in agent names, which silently do nothing.",
+    "Retrieval agents blocked: ClaudeBot, Amazonbot. These remove you from those engines' answers.",
+    "Training agents blocked: GPTBot, Google-Extended, Applebot-Extended, CCBot, meta-externalagent, Bytespider. Legitimate business decision. Does not affect today's answers.",
+    "llms.txt findings are low priority. No major answer engine has publicly committed to consuming it. Fix dead links because they are cheap to fix, not because the file is a lever.",
+    "robots.txt is not the only place access is denied. Check CDN bot rules, WAF rules, X-Robots-Tag headers and rate limiting. If logs show zero hits from an agent this report says is allowed, the block is somewhere else."
+  ],
+  "unrecognised_user_agents": [
+    "CloudflareBrowserRenderingCrawler"
+  ],
+  "summary": {
+    "retrieval_blocked": [
+      "ClaudeBot",
+      "Amazonbot"
+    ],
+    "user_triggered_blocked": [],
+    "training_blocked": [
+      "GPTBot",
+      "Google-Extended",
+      "Applebot-Extended",
+      "CCBot",
+      "meta-externalagent",
+      "Bytespider"
+    ],
+    "verdict": "FAIL"
+  }
+}

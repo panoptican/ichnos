@@ -1,0 +1,49 @@
+{
+ "generated": "2026-09-12",
+ "tool": "lighthouse 13.4.1 local CLI, mobile, headless chrome",
+ "pages": {
+  "https://ichnos.net/traces/philippa-snow/": {
+   "performance": 89,
+   "seo": 100,
+   "accessibility": 100,
+   "lcp_ms": 2490.8875000000003,
+   "tbt_ms": 245,
+   "cls": 0,
+   "fcp_ms": 1895.8875,
+   "total_bytes": 138199,
+   "inp": "unchecked (lab run; INP is field-only)",
+   "failing": [
+    "max-potential-fid",
+    "font-display-insight",
+    "network-dependency-tree-insight"
+   ]
+  },
+  "https://ichnos.net/": {
+   "performance": 65,
+   "seo": 83,
+   "accessibility": 81,
+   "lcp_ms": 4704.145,
+   "tbt_ms": 436,
+   "cls": 0,
+   "fcp_ms": 3319.145,
+   "total_bytes": 462048,
+   "inp": "unchecked (lab run; INP is field-only)",
+   "failing": [
+    "first-contentful-paint",
+    "largest-contentful-paint",
+    "max-potential-fid",
+    "button-name",
+    "label",
+    "landmark-one-main",
+    "unminified-javascript",
+    "unused-javascript",
+    "link-text",
+    "crawlable-anchors",
+    "cache-insight",
+    "font-display-insight",
+    "image-delivery-insight",
+    "render-blocking-insight"
+   ]
+  }
+ }
+}

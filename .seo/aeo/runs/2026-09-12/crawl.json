@@ -1,0 +1,327 @@
+{
+  "pages": [
+    {
+      "url": "https://ichnos.net/",
+      "status": 200,
+      "final_url": "https://ichnos.net/",
+      "error": null,
+      "ttfb_ms": 125,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "x_robots_tag": null,
+      "reachable": true,
+      "title": "ICHNOS",
+      "title_len": 6,
+      "meta_description_len": 87,
+      "h1": [],
+      "h2_count": 0,
+      "h3_count": 0,
+      "question_heading_ratio": 0.0,
+      "canonical": "https://ichnos.net/",
+      "canonical_self": true,
+      "meta_robots": "index, follow, max-image-preview:large",
+      "noindex": false,
+      "nosnippet": false,
+      "html_bytes": 9985,
+      "rendered_text_chars": 244,
+      "rendered_word_count": 47,
+      "text_to_html_ratio": 0.024,
+      "schema_types": [
+        "Organization",
+        "WebSite"
+      ],
+      "dates": {
+        "time_tags": []
+      },
+      "lead_answer_words": 0,
+      "lead_answer": null,
+      "lead_paragraphs_total": 0,
+      "lead_paragraphs_skipped": 0,
+      "tables": 0,
+      "lists": 0,
+      "images": 0,
+      "likely_js_only": false,
+      "blocks": {
+        "segmented": 1,
+        "scored": 1,
+        "skipped_thin": 0,
+        "median": 5,
+        "max": 8,
+        "passages": [
+          {
+            "heading": null,
+            "heading_is_question": false,
+            "word_count": 47,
+            "score": 5,
+            "max": 8,
+            "notes": [
+              "no specific figures"
+            ],
+            "has_table_or_list": false,
+            "preview": "A G G R E G A T E Meagen Crawford A Raft Manifest Rem + Rom Terminal Cannes Philippa Snow Poems About Moss..."
+          }
+        ]
+      },
+      "extractability_mechanical": {
+        "score": 2,
+        "max": 14,
+        "notes": [
+          "no usable lead answer after the H1 (0 paragraphs scanned)",
+          "headings are not phrased as questions",
+          "no date signal found",
+          "no structured blocks (tables or lists)",
+          "very thin or JS-only: 47 server-rendered words",
+          "H1 count is 0, title present"
+        ]
+      },
+      "extractability_needs_human": [
+        "claim independence",
+        "text not image",
+        "substance"
+      ]
+    },
+    {
+      "url": "https://ichnos.net/traces/philippa-snow/",
+      "status": 200,
+      "final_url": "https://ichnos.net/traces/philippa-snow/",
+      "error": null,
+      "ttfb_ms": 146,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "x_robots_tag": null,
+      "reachable": true,
+      "title": "TERMINAL CANNES by Philippa Snow /// ICHNOS",
+      "title_len": 43,
+      "meta_description_len": 25,
+      "h1": [],
+      "h2_count": 0,
+      "h3_count": 0,
+      "question_heading_ratio": 0.0,
+      "canonical": "https://ichnos.net/traces/philippa-snow/",
+      "canonical_self": true,
+      "meta_robots": "index, follow, max-image-preview:large",
+      "noindex": false,
+      "nosnippet": false,
+      "html_bytes": 44986,
+      "rendered_text_chars": 39602,
+      "rendered_word_count": 6299,
+      "text_to_html_ratio": 0.88,
+      "schema_types": [
+        "CreativeWork",
+        "Person",
+        "WebSite"
+      ],
+      "dates": {
+        "time_tags": []
+      },
+      "lead_answer_words": 0,
+      "lead_answer": null,
+      "lead_paragraphs_total": 0,
+      "lead_paragraphs_skipped": 0,
+      "tables": 0,
+      "lists": 0,
+      "images": 1,
+      "likely_js_only": false,
+      "blocks": {
+        "segmented": 1,
+        "scored": 1,
+        "skipped_thin": 0,
+        "median": 4,
+        "max": 8,
+        "passages": [
+          {
+            "heading": null,
+            "heading_is_question": false,
+            "word_count": 6299,
+            "score": 4,
+            "max": 8,
+            "notes": [
+              "pronoun density 7%, the passage depends on what came before",
+              "6299 words, an engine will not lift this whole"
+            ],
+            "has_table_or_list": false,
+            "preview": "I The libel case against her parents and the social commentary that skitters from it doesn\u2019t flow, it floods: over heads, evident that they\u2019re..."
+          }
+        ]
+      },
+      "extractability_mechanical": {
+        "score": 4,
+        "max": 14,
+        "notes": [
+          "no usable lead answer after the H1 (0 paragraphs scanned)",
+          "headings are not phrased as questions",
+          "no date signal found",
+          "no structured blocks (tables or lists)",
+          "H1 count is 0, title present"
+        ]
+      },
+      "extractability_needs_human": [
+        "claim independence",
+        "text not image",
+        "substance"
+      ]
+    },
+    {
+      "url": "https://ichnos.net/traces/dennis-james-sweeney/",
+      "status": 200,
+      "final_url": "https://ichnos.net/traces/dennis-james-sweeney/",
+      "error": null,
+      "ttfb_ms": 123,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "x_robots_tag": null,
+      "reachable": true,
+      "title": "Poems About Moss by Dennis James Sweeney /// ICHNOS",
+      "title_len": 51,
+      "meta_description_len": 26,
+      "h1": [
+        "Poems About Moss"
+      ],
+      "h2_count": 1,
+      "h3_count": 1,
+      "question_heading_ratio": 0.0,
+      "canonical": "https://ichnos.net/traces/dennis-james-sweeney/",
+      "canonical_self": true,
+      "meta_robots": "index, follow, max-image-preview:large",
+      "noindex": false,
+      "nosnippet": false,
+      "html_bytes": 10000,
+      "rendered_text_chars": 2376,
+      "rendered_word_count": 402,
+      "text_to_html_ratio": 0.238,
+      "schema_types": [
+        "CreativeWork",
+        "Person",
+        "WebSite"
+      ],
+      "dates": {
+        "time_tags": []
+      },
+      "lead_answer_words": 0,
+      "lead_answer": null,
+      "lead_paragraphs_total": 0,
+      "lead_paragraphs_skipped": 0,
+      "tables": 0,
+      "lists": 0,
+      "images": 1,
+      "likely_js_only": false,
+      "blocks": {
+        "segmented": 3,
+        "scored": 1,
+        "skipped_thin": 2,
+        "median": 3,
+        "max": 8,
+        "passages": [
+          {
+            "heading": "But mosses don't usually have common names, for no one has bothered with them. \u2014Robin Wall Kimmerer, Gathering Moss",
+            "heading_is_question": false,
+            "word_count": 402,
+            "score": 3,
+            "max": 8,
+            "notes": [
+              "402 words, an engine will not lift this whole",
+              "no specific figures"
+            ],
+            "has_table_or_list": false,
+            "preview": "Conocephalum conicum When the right breath comes I will breathe it Tiny, finger-like protrusions Elves A man locked in the bathroom, mourning Menthol from..."
+          }
+        ]
+      },
+      "extractability_mechanical": {
+        "score": 6,
+        "max": 14,
+        "notes": [
+          "no usable lead answer after the H1 (0 paragraphs scanned)",
+          "headings are not phrased as questions",
+          "no date signal found",
+          "no structured blocks (tables or lists)"
+        ]
+      },
+      "extractability_needs_human": [
+        "claim independence",
+        "text not image",
+        "substance"
+      ]
+    },
+    {
+      "url": "https://ichnos.net/traces/michael-thomas-taren/",
+      "status": 200,
+      "final_url": "https://ichnos.net/traces/michael-thomas-taren/",
+      "error": null,
+      "ttfb_ms": 140,
+      "redirect_count": 0,
+      "redirect_chain": [],
+      "x_robots_tag": null,
+      "reachable": true,
+      "title": "from IN SMITHEREENS by Michael Thomas Taren /// ICHNOS",
+      "title_len": 54,
+      "meta_description_len": 29,
+      "h1": [],
+      "h2_count": 0,
+      "h3_count": 0,
+      "question_heading_ratio": 0.0,
+      "canonical": "https://ichnos.net/traces/michael-thomas-taren/",
+      "canonical_self": true,
+      "meta_robots": "index, follow, max-image-preview:large",
+      "noindex": false,
+      "nosnippet": false,
+      "html_bytes": 19124,
+      "rendered_text_chars": 12983,
+      "rendered_word_count": 2955,
+      "text_to_html_ratio": 0.679,
+      "schema_types": [
+        "CreativeWork",
+        "Person",
+        "WebSite"
+      ],
+      "dates": {
+        "time_tags": []
+      },
+      "lead_answer_words": 0,
+      "lead_answer": null,
+      "lead_paragraphs_total": 0,
+      "lead_paragraphs_skipped": 0,
+      "tables": 0,
+      "lists": 0,
+      "images": 1,
+      "likely_js_only": false,
+      "blocks": {
+        "segmented": 1,
+        "scored": 1,
+        "skipped_thin": 0,
+        "median": 5,
+        "max": 8,
+        "passages": [
+          {
+            "heading": null,
+            "heading_is_question": false,
+            "word_count": 2955,
+            "score": 5,
+            "max": 8,
+            "notes": [
+              "2955 words, an engine will not lift this whole"
+            ],
+            "has_table_or_list": false,
+            "preview": "from In Smithereens Michael Thomas Taren ZOOPRAXOGRAPHER I .. .. had .. .. a .. .. blanket, .. .. I .. .. had ....."
+          }
+        ]
+      },
+      "extractability_mechanical": {
+        "score": 4,
+        "max": 14,
+        "notes": [
+          "no usable lead answer after the H1 (0 paragraphs scanned)",
+          "headings are not phrased as questions",
+          "no date signal found",
+          "no structured blocks (tables or lists)",
+          "H1 count is 0, title present"
+        ]
+      },
+      "extractability_needs_human": [
+        "claim independence",
+        "text not image",
+        "substance"
+      ]
+    }
+  ]
+}

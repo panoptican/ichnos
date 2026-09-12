@@ -1,0 +1,48 @@
+{
+  "run": "2026-09-12-2205",
+  "action": "correct",
+  "url": "https://ichnos.net/",
+  "claim": "No dev-only tooling ships in production HTML",
+  "source": "src/index.html:151 comment 'Dev-only: Agentation annotation toolbar' (read 2026-09-11); package.json lists agentation, react, react-dom, esbuild under devDependencies only",
+  "reproduced": {
+    "live_url": "https://ichnos.net/",
+    "live_html_line": "<script src=\"./js/agentation-bundle.js\"></script>",
+    "live_asset": "https://ichnos.net/js/agentation-bundle.js -> 200, 1,428,634 bytes (checked 2026-09-11)",
+    "bundle_contents": "esbuild output of dev/agentation-loader.jsx: unminified react.development.js + agentation 2.2.0, hardcoded endpoint http://localhost:4747"
+  },
+  "before": {
+    "src/index.html": "lines 151-152: <!-- Dev-only: Agentation annotation toolbar -->\\n<script src=\"./js/agentation-bundle.js\"></script>",
+    "src/js/agentation-bundle.js": "tracked, 1.43 MB, served by Cloudflare Pages verbatim"
+  },
+  "after": {
+    "src/index.html": "script tag and comment removed; body ends after ./js/scripts.js",
+    "src/js/agentation-bundle.js": "git rm (deleted from served tree)",
+    "dev/agentation-bundle.js, dev/agentation-loader.jsx": "unchanged; not under src/, not served"
+  },
+  "siblings_searched": {
+    "query": "rg 'agentation|localhost:4747' (repo root)",
+    "served_hits": ["src/index.html:152", "src/js/agentation-bundle.js"],
+    "non_served_hits": ["dev/agentation-loader.jsx", "dev/agentation-bundle.js", "package.json", "package-lock.json", ".seo/*"]
+  },
+  "test": {
+    "rule": ".seo/truth-checks.json claim 'No dev-only tooling ships in production HTML': src/**/*.html must_not_match ['agentation', 'localhost:\\\\d+']",
+    "result_before": "1 contradiction (src/index.html:152)",
+    "result_after": "5 rules, 0 contradictions, 0 missing"
+  },
+  "rendered_check": {
+    "method": "python3 -m http.server --directory src on 127.0.0.1:8731; curl + Lighthouse 13.4.1 mobile headless",
+    "index_status": 200,
+    "index_bytes": 8576,
+    "bundle_status": 404,
+    "agentation_occurrences_in_html": 0,
+    "lighthouse_local_before_HEAD": {"performance": 55, "accessibility": 81, "seo": 83, "fcp": "9.3 s", "lcp": "10.4 s", "tbt": "110 ms", "total_bytes": 1732579, "file": ".seo/health/lighthouse-2026-09-12-local-before.json"},
+    "lighthouse_local_after": {"performance": 94, "accessibility": 95, "seo": 92, "fcp": "2.3 s", "lcp": "2.7 s", "tbt": "0 ms", "total_bytes": 303644, "file": ".seo/health/lighthouse-2026-09-12-local-after.json"},
+    "live_baseline_before_deploy": {"performance": 65, "lcp": "4.7 s", "tbt": "436 ms", "total_bytes": 462048, "file": ".seo/health/lighthouse-2026-09-12.json", "note": "live is served compressed via Cloudflare so bytes differ from local; compare live-after once deployed"}
+  },
+  "date_modified": "not applicable: the homepage carries no dateModified and the sitemap has no lastmod; the change removes a script, not content. Recorded as unchecked in the run record.",
+  "remaining_failures_after": ["landmark-one-main", "crawlable-anchors"],
+  "not_done": [
+    "live re-measure after the commit deploys (Cloudflare Pages builds from main)",
+    "landmark-one-main and crawlable-anchors are the homepage h1/crawlable-copy repair, a separate candidate"
+  ]
+}

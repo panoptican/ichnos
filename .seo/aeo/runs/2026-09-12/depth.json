@@ -1,0 +1,27 @@
+{
+  "site": "https://ichnos.net",
+  "max_depth": 4,
+  "max_pages": 200,
+  "pages_fetched": 8,
+  "pages_ok": 8,
+  "depth_histogram": {
+    "0": 1,
+    "1": 6,
+    "2": 1
+  },
+  "deep_pages": [],
+  "fetch_failures": [],
+  "crawl_complete": true,
+  "notes": [],
+  "sitemap": {
+    "sources": [
+      "https://ichnos.net/sitemap.xml"
+    ],
+    "url_count": 7,
+    "truncated": false,
+    "notes": []
+  },
+  "orphans": [],
+  "orphan_rate": 0.0,
+  "orphans_reliable": true
+}
