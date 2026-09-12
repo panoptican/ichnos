@@ -111,6 +111,59 @@
   font-variant: small-caps;
 }
 
+/* Cover heading: the wordmark is the visible h1 */
+.cover-title {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 0;
+}
+
+/* About and submit */
+.notes {
+  padding: 8vh 10vw;
+  background: url('../img/bg_cartography.png');
+  color: #fff;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4vw;
+}
+
+.notes-title {
+  font-family: noticia_textbold;
+  font-size: 3rem;
+  font-weight: normal;
+  margin: 0;
+  width: 20vw;
+  flex: 0 0 auto;
+}
+
+.notes-prose {
+  font-family: work_sansregular;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 44rem;
+}
+
+.notes-prose p {
+  margin: 0 0 1.2em;
+}
+
+.notes-prose p:last-child {
+  margin-bottom: 0;
+}
+
+.notes-prose a {
+  color: #DBB700;
+  text-decoration: underline;
+}
+
+.notes-prose a:hover,
+.notes-prose a:focus {
+  color: #fff;
+}
+
 /* Navigation */
 .nav {
   height: 10vh;
@@ -227,6 +280,21 @@ a:focus,
 
   .toc-author {
     font-size: 0.85rem;
+  }
+
+  /* About and submit - stack */
+  .notes {
+    flex-flow: column nowrap;
+    padding: 40px 20px;
+  }
+
+  .notes-title {
+    width: auto;
+    font-size: 2rem;
+  }
+
+  .notes-prose {
+    font-size: 1rem;
   }
 
   /* Navigation - scale font size */

@@ -1,13 +1,24 @@
 /**
  * ICHNOS - Main site scripts
+ *
+ * The about and submit text lives in the page (#about, #submit). The nav and
+ * the empty cards open that same text in a dialog; without JS the links jump
+ * to the sections.
  */
 
 $(document).ready(function() {
-  $('.about-link').click(function() {
-    vex.dialog.alert('In the night of time our writhing track our trace an imprint leaves its body on the stone, its knowing. Mark x mark the falling and ourselves caught in the clay, the having stood in singular production. A body of work and its impetus, the invention of goad, both beast & attendant mobility. As every form of question is similarly ended with the same manner of dot, a gap, a line into parenthetical half-circumscription, the open-ended idea drives the effort of our point – the spot and the tip of the stylus coinciding at the nexus of what all has fashioned us to shape. By tooth, by claw, by will and fire we depart ourselves, drawn striven toward the core in this canvas, renewed.');
+  function openNote(id) {
+    var prose = document.querySelector('#' + id + ' .notes-prose');
+    if (!prose || typeof vex === 'undefined') return false;
+    vex.dialog.alert({ unsafeMessage: prose.innerHTML });
+    return true;
+  }
+
+  $('.about-link').click(function(event) {
+    if (openNote('about')) event.preventDefault();
   });
 
-  $('.submit-link').click(function() {
-    vex.dialog.alert('ICHNOS is published according to no guidelines, biases, proclivities or schedule by <a href="https://www.unwin-dunraven.com">Unwin-Dunraven Literary Ecclesia</a>. Email work to editors@ichnos.net');
+  $('.submit-link').click(function(event) {
+    if (openNote('submit')) event.preventDefault();
   });
 });
