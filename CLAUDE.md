@@ -19,8 +19,7 @@ The project uses a Node.js build pipeline, but **the source files in `src/` are 
 ```
 src/
 ├── index.html          # Landing page with table of contents
-├── css/                # Global styles (normalize, type, main, vex dialogs)
-├── js/                 # Global JS (jQuery, Vex.js for dialogs, main scripts)
+├── css/                # Global styles (normalize, type, main)
 ├── img/                # Site images
 ├── type/               # Web fonts
 └── traces/             # Individual literary works (6 total)
