@@ -103,3 +103,6 @@ typings/
 
 
 # End of https://www.gitignore.io/api/node
+
+# Python bytecode
+__pycache__/
