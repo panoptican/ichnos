@@ -1,9 +1,0 @@
-{
-  "_comment": "Market data cache. No keyword tool connected on 2026-09-11; baseline unknown. Cached slices expire after 30 days.",
-  "baseline": {
-    "domain_rating": null,
-    "source": "none",
-    "read": "2026-09-11"
-  },
-  "keywords": {}
-}

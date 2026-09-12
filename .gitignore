@@ -5,6 +5,10 @@ plans
 CLAUDE.md
 .claude/
 
+# Agent tooling and SEO state
+.agents/
+.seo/
+
 # Created by https://www.gitignore.io/api/sublimetext
 
 ### SublimeText ###
