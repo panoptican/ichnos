@@ -1,0 +1,348 @@
+{
+  "site_url": "sc-domain:ichnos.net",
+  "start_date": "2026-08-13",
+  "end_date": "2026-09-09",
+  "source": "Search Console UI export (Performance > Search results, Web, last 28 days), exported 2026-09-11",
+  "note": "UI export; no query x page cross-table. Converted from Pages.csv / Queries.csv.",
+  "dimensions": [
+    "page"
+  ],
+  "rows": [
+    {
+      "keys": [
+        "https://ichnos.net/"
+      ],
+      "clicks": 0,
+      "impressions": 18,
+      "ctr": 0.0,
+      "position": 14.5
+    },
+    {
+      "keys": [
+        "https://ichnos.net/traces/michael-thomas-taren/"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0.0,
+      "position": 11.36
+    },
+    {
+      "keys": [
+        "https://ichnos.net/traces/dennis-james-sweeney/"
+      ],
+      "clicks": 0,
+      "impressions": 4,
+      "ctr": 0.0,
+      "position": 32.25
+    },
+    {
+      "keys": [
+        "https://ichnos.net/traces/philippa-snow/"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 11.0
+    },
+    {
+      "keys": [
+        "https://ichnos.net/traces/kristin-peterson/"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 5.0
+    },
+    {
+      "keys": [
+        "https://ichnos.net/traces/meagen-crawford/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 4.0
+    },
+    {
+      "keys": [
+        "https://ichnos.net/traces/rem-plus-rom/"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 7.0
+    }
+  ],
+  "daily": [
+    {
+      "date": "2026-08-13",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 10.0
+    },
+    {
+      "date": "2026-08-14",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 62.0
+    },
+    {
+      "date": "2026-08-15",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 51.5
+    },
+    {
+      "date": "2026-08-16",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 7.5
+    },
+    {
+      "date": "2026-08-17",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 7.5
+    },
+    {
+      "date": "2026-08-18",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 6.0
+    },
+    {
+      "date": "2026-08-19",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 7.5
+    },
+    {
+      "date": "2026-08-20",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 14.5
+    },
+    {
+      "date": "2026-08-21",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 11.0
+    },
+    {
+      "date": "2026-08-22",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 9.0
+    },
+    {
+      "date": "2026-08-23",
+      "clicks": 0,
+      "impressions": 4,
+      "position": 11.2
+    },
+    {
+      "date": "2026-08-24",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-08-25",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-08-26",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 17.0
+    },
+    {
+      "date": "2026-08-27",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-08-28",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 23.0
+    },
+    {
+      "date": "2026-08-29",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 2.3
+    },
+    {
+      "date": "2026-08-30",
+      "clicks": 0,
+      "impressions": 2,
+      "position": 32.0
+    },
+    {
+      "date": "2026-08-31",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-09-01",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-09-02",
+      "clicks": 0,
+      "impressions": 3,
+      "position": 20.3
+    },
+    {
+      "date": "2026-09-03",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-09-04",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 20.0
+    },
+    {
+      "date": "2026-09-05",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 5.0
+    },
+    {
+      "date": "2026-09-06",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-09-07",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    },
+    {
+      "date": "2026-09-08",
+      "clicks": 0,
+      "impressions": 1,
+      "position": 3.0
+    },
+    {
+      "date": "2026-09-09",
+      "clicks": 0,
+      "impressions": 0,
+      "position": null
+    }
+  ],
+  "by_country": [
+    {
+      "keys": [
+        "United States"
+      ],
+      "clicks": 0,
+      "impressions": 12,
+      "ctr": 0.0,
+      "position": 15.17
+    },
+    {
+      "keys": [
+        "France"
+      ],
+      "clicks": 0,
+      "impressions": 11,
+      "ctr": 0.0,
+      "position": 9.64
+    },
+    {
+      "keys": [
+        "Turkey"
+      ],
+      "clicks": 0,
+      "impressions": 3,
+      "ctr": 0.0,
+      "position": 24.0
+    },
+    {
+      "keys": [
+        "Switzerland"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 8.0
+    },
+    {
+      "keys": [
+        "Greece"
+      ],
+      "clicks": 0,
+      "impressions": 2,
+      "ctr": 0.0,
+      "position": 17.0
+    },
+    {
+      "keys": [
+        "Spain"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 5.0
+    },
+    {
+      "keys": [
+        "Bulgaria"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 9.0
+    },
+    {
+      "keys": [
+        "United Kingdom"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 23.0
+    },
+    {
+      "keys": [
+        "Vietnam"
+      ],
+      "clicks": 0,
+      "impressions": 1,
+      "ctr": 0.0,
+      "position": 95.0
+    }
+  ],
+  "by_device": [
+    {
+      "keys": [
+        "Mobile"
+      ],
+      "clicks": 0,
+      "impressions": 20,
+      "ctr": 0.0,
+      "position": 9.3
+    },
+    {
+      "keys": [
+        "Desktop"
+      ],
+      "clicks": 0,
+      "impressions": 14,
+      "ctr": 0.0,
+      "position": 25.43
+    }
+  ]
+}
